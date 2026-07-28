@@ -1,168 +1,151 @@
-import { Metadata } from 'next';
-import Image from 'next/image';
-import Link from 'next/link';
-import Script from 'next/script';
+import { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import { SITE } from "@/lib/site";
+
+const canonical = `${SITE.origin}${SITE.routes.about}`;
 
 export const metadata: Metadata = {
-  title: 'About Card Rummy - Pakistan\'s Premier Card Gaming Platform',
-  description: 'Learn about Card Rummy, our history, mission, and vision for creating the best card gaming platform in Pakistan with Teen Patti, Rummy and more.',
-  keywords: ['Card Rummy about', 'about us', 'gaming company Pakistan', 'Card Rummy history', 'card gaming platform', 'Teen Patti', '3 Patti'],
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  alternates: {
-    canonical: "https://cardrummyapp.com.pk/about-us",
-  },
+  title: "About Teen Patti Loot | Pakistan Card Gaming Information Hub",
+  description: `Learn about ${SITE.name} and ${SITE.domain} — independent guides for APK download, JazzCash deposits, withdrawals, and safe play tips for Pakistani users.`,
+  keywords: [
+    "About Teen Patti Loot",
+    "Teen Patti Loot Pakistan",
+    "Teen Patti Loot guide",
+    "3 Patti Loot information",
+  ],
+  alternates: { canonical },
   openGraph: {
-    title: 'About Card Rummy - Pakistan\'s Premier Card Gaming Platform',
-    description: 'Learn about Card Rummy, our history, mission, and vision for creating the best card gaming platform in Pakistan with real cash rewards.',
-    url: "https://cardrummyapp.com.pk/about-us",
-    siteName: "Card Rummy",
-    locale: "en_US",
+    title: "About Teen Patti Loot",
+    description: `Independent information about ${SITE.name} for players in Pakistan.`,
+    url: canonical,
+    siteName: SITE.name,
     type: "website",
-    images: [
-      {
-        url: "https://cardrummyapp.com.pk/card-rummy-logo.webp",
-        width: 1200,
-        height: 630,
-        alt: "About Card Rummy - Premier Card Gaming Platform",
-      }
-    ],
+    images: [{ url: `${SITE.origin}${SITE.images.logo}`, alt: `About ${SITE.name}` }],
   },
   twitter: {
     card: "summary_large_image",
-    title: 'About Card Rummy - Pakistan\'s Premier Card Gaming Platform',
-    description: 'Learn about Card Rummy, our history, mission, and vision for creating the best card gaming platform in Pakistan with real cash rewards.',
-    images: ["https://cardrummyapp.com.pk/card-rummy-logo.webp"],
+    title: "About Teen Patti Loot",
+    description: `Mission and purpose of ${SITE.domain} — Teen Patti Loot guides for Pakistan.`,
+    images: [`${SITE.origin}${SITE.images.logo}`],
   },
 };
 
 export default function AboutPage() {
+  const aboutSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    mainEntity: {
+      "@type": "Organization",
+      name: SITE.name,
+      url: SITE.origin,
+      logo: `${SITE.origin}${SITE.images.logo}`,
+      description: `${SITE.name} information hub covering APK install, wallet guides, and responsible play notes for Pakistan.`,
+      foundingLocation: { "@type": "Country", name: "Pakistan" },
+    },
+    mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE.origin },
+      { "@type": "ListItem", position: 2, name: "About Us", item: canonical },
+    ],
+  };
+
   return (
     <article className="min-h-screen bg-primary py-12 px-4">
-      <div className="container mx-auto">
-        <div className="max-w-4xl mx-auto">
-          {/* Hero Section */}
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">About Us</h1>
-          </div>
-          
-          {/* Main Content */}
-          <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-12">
-            <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 lg:gap-20 mb-8">
-              <div className="w-full md:w-1/3 flex-shrink-0 flex justify-center md:justify-start">
-                <Link href="/" className="block">
-                  <div className="relative w-[280px] h-[280px] md:w-[320px] md:h-[320px] mx-auto md:mx-0 rounded-lg overflow-hidden bg-[#0A1029]">
-                    <Image 
-                      src="/card-rummy.webp" 
-                      alt="Card Rummy – Pakistan's Premier Card Gaming Platform"
-                      title="About Card Rummy – Pakistan's #1 Card Game App"
-                      width={320}
-                      height={320}
-                      sizes="(max-width: 768px) 280px, 320px"
-                      className="object-contain p-4 w-full h-full"
-                      priority
-                    />
-                  </div>
-                </Link>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+
+      <div className="container mx-auto max-w-4xl">
+        <nav aria-label="Breadcrumb" className="mb-8">
+          <ol className="flex flex-wrap items-center gap-2 text-sm text-gray-400">
+            <li><Link href={SITE.routes.home} className="hover:text-[#FFA500]">Home</Link></li>
+            <li aria-hidden="true">/</li>
+            <li aria-current="page" className="text-[#FFC107] font-medium">About Us</li>
+          </ol>
+        </nav>
+
+        <div className="text-center mb-12">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">About {SITE.name}</h1>
+          <p className="text-gray-400 text-lg">Clear guides for Pakistani players — no hype, no guaranteed wins</p>
+        </div>
+
+        <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-12">
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            <Link href={SITE.routes.home} className="flex-shrink-0">
+              <div className="relative w-[280px] h-[280px] rounded-lg overflow-hidden bg-[#0A1029]">
+                <Image
+                  src={SITE.images.hero}
+                  alt={`${SITE.name} — Pakistan card gaming guides`}
+                  title={`About ${SITE.name}`}
+                  width={320}
+                  height={320}
+                  className="object-contain p-4 w-full h-full"
+                  priority
+                />
               </div>
-              <div className="md:w-2/3 md:pl-4 lg:pl-6">
-                <div className="prose prose-lg max-w-none">
-                  <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                    Welcome to <a href="https://www.cardrummyapp.com.pk/" className="text-accent hover:text-accent font-semibold" target="_blank" rel="noopener noreferrer">www.cardrummyapp.com.pk</a>, a trusted platform to provide the latest information about 3patti <Link href="/" className="text-accent hover:underline font-semibold">Card Rummy</Link>. This is one of the most popular online casino games in Pakistan, having <span className="font-bold text-accent">500K+ users</span>. <a href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Download Card Rummy</a> now to join thousands of players earning real cash rewards.
-                  </p>
-                  <p className="text-lg text-gray-300 leading-relaxed">
-                    Hundreds of people are playing these wonderful games and earning a handsome amount on a daily or weekly basis.
-                  </p>
-                </div>
-              </div>
+            </Link>
+            <div className="md:flex-1">
+              <p className="text-lg text-gray-300 leading-relaxed mb-4">
+                Welcome to{" "}
+                <a href={SITE.origin} className="text-[#FFA500] hover:underline font-semibold" target="_blank" rel="noopener noreferrer">
+                  {SITE.domain}
+                </a>
+                . We publish practical, up-to-date information about{" "}
+                <Link href={SITE.routes.home} className="text-[#0ea5e9] hover:underline font-semibold">{SITE.name}</Link>{" "}
+                — the Android card platform used by {SITE.downloadsLabel} players across Pakistan for Teen Patti tables, Rummy rooms, and mini arcade titles.
+              </p>
+              <p className="text-lg text-gray-300 leading-relaxed">
+                Our writers focus on install safety, JazzCash/EasyPaisa wallet flows, emulator setup for PC, and honest expectations around real-money play. We are an editorial site, not the app developer, and we do not promise earnings.
+              </p>
             </div>
           </div>
-          
-          {/* Our Aim Section */}
-          <div className="bg-gradient-to-r from-orange-600 to-orange-500 rounded-2xl shadow-xl p-8 md:p-12 mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white text-center">Our Aim!</h2>
-            <p className="text-lg md:text-xl text-white leading-relaxed text-center">
-              Our aim is to provide the users with the latest and updated information and earning tips about Card Rummy. For any type of information or query, you can visit our <Link href="/contact-us" className="underline hover:text-orange-100 font-semibold">contact us page</Link>.
+        </div>
+
+        <div className="bg-gradient-to-r from-[#FFA500] to-[#FFC107] rounded-2xl shadow-xl p-8 md:p-12 mb-12">
+          <h2 className="text-3xl font-bold mb-6 text-primary text-center">What We Publish</h2>
+          <ul className="space-y-3 text-primary/90 text-lg max-w-2xl mx-auto">
+            <li>✓ Official APK download steps and version notes ({SITE.version})</li>
+            <li>✓ Deposit &amp; withdraw walkthroughs with {SITE.minDeposit} / {SITE.minWithdraw} thresholds</li>
+            <li>✓ PC emulator guides for Windows users</li>
+            <li>✓ Safety articles and troubleshooting for common install errors</li>
+          </ul>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6 mb-12">
+          <div className="bg-[#0A1029] rounded-xl p-6">
+            <h2 className="text-xl font-bold text-[#FFA500] mb-3">Editorial Standards</h2>
+            <p className="text-gray-300 leading-relaxed">
+              Content is written for readers in Pakistan using plain English (and Urdu terms where helpful). We update pages when APK versions or payment flows change — last refresh aligned with {SITE.updateDate}.
             </p>
           </div>
-          
-          {/* Contact CTA */}
-          <div className="bg-secondary rounded-2xl shadow-xl p-8 text-center">
-            <h2 className="text-2xl font-bold mb-4 text-white">Have Questions?</h2>
-            <p className="text-gray-300 mb-6 text-lg">
-              We're here to help! Contact our team for any information or queries about Card Rummy.
+          <div className="bg-[#0A1029] rounded-xl p-6">
+            <h2 className="text-xl font-bold text-[#FFA500] mb-3">Responsible Play</h2>
+            <p className="text-gray-300 leading-relaxed">
+              Card games involve financial risk. We encourage budgets, breaks, and awareness of local laws. If play stops being fun, pause and seek support.
             </p>
-            <Link 
-              href="/contact-us" 
-              className="inline-block bg-accent hover:bg-accent/90 text-primary font-bold py-3 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-            >
-              Contact Us
-            </Link>
           </div>
         </div>
-      </div>
 
-      <Script
-        id="about-page-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "AboutPage",
-            "mainEntity": {
-              "@type": "Organization",
-              "name": "Card Rummy",
-              "alternateName": "3 Patti Card Rummy",
-              "url": "https://cardrummyapp.com.pk",
-              "logo": "https://cardrummyapp.com.pk/card-rummy-logo.webp",
-              "description": "Card Rummy is Pakistan's premier card gaming platform, offering Teen Patti, Rummy, Dragon vs Tiger and more with real cash rewards.",
-              "foundingDate": "2024",
-              "foundingLocation": {
-                "@type": "Country",
-                "name": "Pakistan"
-              },
-              "sameAs": [
-                "https://facebook.com/cardrummy",
-                "https://twitter.com/cardrummy"
-              ],
-              "founder": {
-                "@type": "Person",
-                "name": "Erio Card Rummy Dev"
-              }
-            },
-            "about": {
-              "@type": "Thing",
-              "name": "Card Gaming Platform",
-              "description": "Online card gaming platform with real cash rewards serving Pakistani users"
-            },
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://cardrummyapp.com.pk/about-us"
-            }
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cardrummyapp.com.pk" },
-              { "@type": "ListItem", "position": 2, "name": "About Us", "item": "https://cardrummyapp.com.pk/about-us" }
-            ]
-          })
-        }}
-      />
+        <div className="bg-secondary rounded-2xl shadow-xl p-8 text-center">
+          <h2 className="text-2xl font-bold mb-4 text-white">Questions or Corrections?</h2>
+          <p className="text-gray-300 mb-6">
+            Reach us at{" "}
+            <a href={`mailto:${SITE.supportEmail}`} className="text-[#0ea5e9] hover:underline">{SITE.supportEmail}</a>{" "}
+            or visit the contact page.
+          </p>
+          <Link
+            href={SITE.routes.contact}
+            className="inline-block bg-[#FFA500] hover:bg-[#FFC107] text-primary font-bold py-3 px-8 rounded-full transition-all"
+          >
+            Contact Us
+          </Link>
+        </div>
+      </div>
     </article>
   );
-} 
+}

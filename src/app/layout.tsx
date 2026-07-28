@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import { SITE } from "@/lib/site";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -28,114 +29,91 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://cardrummyapp.com.pk'),
+  metadataBase: new URL(SITE.origin),
   title: {
-    default: "Card Rummy Pakistan v1.231 Free Download Official APK",
-    template: "%s | Card Rummy"
+    default: "Teen Patti Loot APK Download Pakistan 2026",
+    template: `%s | ${SITE.name}`,
   },
-  description: "Card Rummy 2026 - Pakistan's #1 card game platform. Download Card Rummy APK, play Teen Patti, Rummy, Dragon vs Tiger & win real cash. Fast withdrawals via JazzCash & EasyPaisa. Join 500K+ players!",
+  description:
+    "Download Teen Patti Loot APK for Android in Pakistan. Install guide, JazzCash & EasyPaisa tips, bonuses, and safe play steps on teenpattilootapp.com.pk.",
   keywords: [
-    "Card Rummy",
-    "card rummy game",
-    "card rummy download",
-    "card rummy app",
-    "card rummy apk",
-    "card rummy pakistan",
-    "card rummy online",
-    "download card rummy",
-    "card rummy real money",
-    "3 Patti Card Rummy",
-    "how to play card rummy",
-    "card rummy 2026",
-    "Pakistan card games",
-    "Teen Patti game",
-    "online rummy game",
-    "earn money playing cards",
-    "Android gaming app 2026",
-    "JazzCash gaming",
-    "EasyPaisa gaming",
-    "mobile card games",
-    "real money games Pakistan",
-    "card game earning app",
-    "Teen Patti online",
-    "Dragon vs Tiger",
-    "best earning app Pakistan",
-    "rummy card game",
-    "play rummy online",
-    "rummy game download"
+    "Teen Patti Loot",
+    "Teen Patti Loot APK",
+    "3 Patti Loot",
+    "Teen Patti Loot download",
+    "Teen Patti Loot Pakistan",
+    "3 Patti Loot APK",
+    "Teen Patti earning app",
+    "JazzCash Teen Patti",
+    "EasyPaisa Teen Patti",
+    "Teen Patti Loot 2026",
   ],
-  authors: [{ name: "Card Rummy Team" }],
-  creator: "Card Rummy",
-  publisher: "Card Rummy",
+  authors: [{ name: `${SITE.name} Team` }],
+  creator: SITE.name,
+  publisher: SITE.name,
   robots: {
     index: true,
     follow: true,
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   icons: {
     icon: [
-      { url: '/favicon.ico', type: 'image/x-icon', sizes: 'any' },
-      { url: '/card-rummy-logo.webp', type: 'image/webp', sizes: '192x192' },
-      { url: '/card-rummy.webp', type: 'image/webp', sizes: '1024x1024' }
+      { url: "/favicon.ico", type: "image/x-icon", sizes: "any" },
+      { url: SITE.images.logo, type: "image/webp", sizes: "192x192" },
+      { url: SITE.images.hero, type: "image/webp", sizes: "512x512" },
     ],
-    apple: [
-      { url: '/card-rummy-logo.webp', sizes: '180x180' }
-    ],
-    shortcut: [
-      { url: '/favicon.ico', type: 'image/x-icon' }
-    ]
-  },
-  verification: {
-    google: "8a7c21f6e90a89ef",
+    apple: [{ url: SITE.images.logo, sizes: "180x180" }],
+    shortcut: [{ url: "/favicon.ico", type: "image/x-icon" }],
   },
   alternates: {
-    canonical: "https://cardrummyapp.com.pk",
+    canonical: SITE.origin,
   },
   openGraph: {
-    title: "Card Rummy Pakistan v1.231 Free Download Official APK",
-    description: "Card Rummy 2026 - Pakistan's #1 card game platform. Join 500K+ players. Play Teen Patti, Rummy & more. Earn real money with JazzCash & EasyPaisa. Download now!",
-    url: "https://cardrummyapp.com.pk",
-    siteName: "Card Rummy",
+    title: "Teen Patti Loot APK Download Pakistan 2026",
+    description:
+      "Download Teen Patti Loot APK for Android in Pakistan. JazzCash & EasyPaisa tips, bonuses, and safe install steps.",
+    url: SITE.origin,
+    siteName: SITE.name,
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://cardrummyapp.com.pk/feature/og-image.webp",
-        width: 1200,
-        height: 630,
-        alt: "Card Rummy - Premier Card Gaming Platform",
+        url: `${SITE.origin}${SITE.images.og}`,
+        width: 512,
+        height: 512,
+        alt: `${SITE.name} - Teen Patti APK for Pakistan`,
       },
       {
-        url: "https://cardrummyapp.com.pk/feature/og-image-square.webp",
-        width: 800,
-        height: 800,
-        alt: "Card Rummy - Premier Card Gaming Platform",
-      }
+        url: `${SITE.origin}${SITE.images.ogSquare}`,
+        width: 512,
+        height: 512,
+        alt: `${SITE.name} - Teen Patti APK for Pakistan`,
+      },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Card Rummy Pakistan v1.231 Free Download Official APK",
-    description: "Card Rummy 2026 - Pakistan's #1 card game platform. Join 500K+ players. Play Teen Patti, Rummy & more. Earn real money with JazzCash & EasyPaisa. Download now!",
-    creator: "@cardrummy",
+    title: "Teen Patti Loot APK Download Pakistan 2026",
+    description:
+      "Download Teen Patti Loot APK for Android in Pakistan. JazzCash & EasyPaisa tips, bonuses, and safe install steps.",
     images: [
       {
-        url: "https://cardrummyapp.com.pk/feature/twitter-card.webp",
-        width: 1200,
-        height: 600,
-        alt: "Card Rummy - Premier Card Gaming Platform",
-      }
+        url: `${SITE.origin}${SITE.images.twitter}`,
+        width: 512,
+        height: 512,
+        alt: `${SITE.name} - Teen Patti APK for Pakistan`,
+      },
     ],
   },
-  applicationName: "Card Rummy",
+  applicationName: SITE.name,
   category: "Gaming",
-  classification: "Card Gaming Platform",
+  classification: "Teen Patti Gaming Platform",
 };
 
 export default function RootLayout({
@@ -150,29 +128,26 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16 32x32" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="/card-rummy-logo.webp" type="image/webp" sizes="192x192" />
-        <link rel="icon" href="/card-rummy.webp" type="image/webp" sizes="1024x1024" />
-        <link rel="apple-touch-icon" href="/card-rummy-logo.webp" sizes="180x180" />
-        
-        {/* Preconnect to external domains for faster loading */}
+        <link rel="icon" href={SITE.images.logo} type="image/webp" sizes="192x192" />
+        <link rel="icon" href={SITE.images.hero} type="image/webp" sizes="1024x1024" />
+        <link rel="apple-touch-icon" href={SITE.images.logo} sizes="180x180" />
+
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        
-        {/* Defer manifest to avoid critical path (374ms latency) - load after page interactive */}
+
         <Script id="deferred-manifest" strategy="lazyOnload">
           {`(function(){var l=document.createElement('link');l.rel='manifest';l.href='/manifest.json';document.head.appendChild(l);})();`}
         </Script>
-        {/* Google Analytics - only load if GA ID is set in env (use NEXT_PUBLIC_GA_MEASUREMENT_ID) */}
-        {typeof process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID === 'string' &&
-         process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID &&
-         !/^G-XXXXXXXXXX$/i.test(process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID) && (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
-              strategy="lazyOnload"
-            />
-            <Script id="google-analytics" strategy="lazyOnload">
-              {`
+        {typeof process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID === "string" &&
+          process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID &&
+          !/^G-XXXXXXXXXX$/i.test(process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID) && (
+            <>
+              <Script
+                src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
+                strategy="lazyOnload"
+              />
+              <Script id="google-analytics" strategy="lazyOnload">
+                {`
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
@@ -182,32 +157,30 @@ export default function RootLayout({
                   transport_type: 'beacon'
                 });
               `}
-            </Script>
-          </>
-        )}
+              </Script>
+            </>
+          )}
       </head>
       <body
         className={`${poppins.className} antialiased bg-primary text-white min-h-screen flex flex-col`}
         style={{
-          backgroundImage: "radial-gradient(circle at 10% 20%, rgba(10, 16, 41, 0.4) 0%, rgba(6, 9, 31, 0.01) 90%)",
+          backgroundImage:
+            "radial-gradient(circle at 10% 20%, rgba(10, 16, 41, 0.4) 0%, rgba(6, 9, 31, 0.01) 90%)",
           backgroundAttachment: "fixed",
-          minHeight: "100vh"
+          minHeight: "100vh",
         }}
         suppressHydrationWarning
       >
         <div className="stars-bg fixed inset-0 z-0 opacity-20"></div>
         <MobileMenuProvider>
           <Header />
-          <main className="relative z-10">
-          {children}
-          </main>
+          <main className="relative z-10">{children}</main>
           <DeferredStyles />
           <Footer />
           <ScrollToTopWrapper />
         </MobileMenuProvider>
         <WebVitalsTracker />
-        
-        {/* Structured data for Organization */}
+
         <Script
           id="organization-schema"
           type="application/ld+json"
@@ -215,19 +188,15 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "Card Rummy",
-              "url": "https://cardrummyapp.com.pk",
-              "logo": "https://cardrummyapp.com.pk/card-rummy-logo.webp",
-              "description": "Card Rummy is Pakistan's premier card gaming platform, offering Teen Patti, Rummy, and many other card games with real cash rewards.",
-              "sameAs": [
-                "https://facebook.com/cardrummy",
-                "https://twitter.com/cardrummy"
-              ]
-            })
+              name: SITE.name,
+              url: SITE.origin,
+              logo: `${SITE.origin}${SITE.images.logo}`,
+              description:
+                "Teen Patti Loot is a Teen Patti APK guide and download hub for Pakistani players with JazzCash and EasyPaisa support.",
+            }),
           }}
         />
-        
-        {/* Structured data for SoftwareApplication */}
+
         <Script
           id="app-schema"
           type="application/ld+json"
@@ -235,20 +204,21 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "SoftwareApplication",
-              "name": "Card Rummy",
-              "operatingSystem": "Android",
-              "applicationCategory": "GameApplication",
-              "offers": {
+              name: SITE.name,
+              operatingSystem: "Android",
+              applicationCategory: "GameApplication",
+              offers: {
                 "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "PKR"
+                price: SITE.price,
+                priceCurrency: SITE.currency,
               },
-              "aggregateRating": {
+              aggregateRating: {
                 "@type": "AggregateRating",
-                "ratingValue": "4.5",
-                "ratingCount": "500000"
-              }
-            })
+                ratingValue: SITE.ratingValue,
+                bestRating: "5",
+                ratingCount: SITE.ratingCount,
+              },
+            }),
           }}
         />
       </body>

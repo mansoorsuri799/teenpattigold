@@ -1,7 +1,7 @@
 {
-  "name": "Card Rummy",
-  "short_name": "Card Rummy",
-  "description": "Pakistan's premier card gaming platform offering Teen Patti, Rummy, Dragon vs Tiger and more. Earn real cash rewards!",
+  "name": "Teen Patti Loot",
+  "short_name": "Teen Patti Loot",
+  "description": "Teen Patti Loot APK for Pakistani players — download, JazzCash & EasyPaisa tips, bonuses, and safe play guidance.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#06091F",
@@ -13,16 +13,10 @@
       "type": "image/x-icon"
     },
     {
-      "src": "/card-rummy-logo.webp",
+      "src": "/teen-patti-loot.webp",
       "sizes": "192x192 512x512",
       "type": "image/webp",
       "purpose": "any maskable"
-    },
-    {
-      "src": "/card-rummy.webp",
-      "sizes": "512x512",
-      "type": "image/webp",
-      "purpose": "any"
     }
   ]
-} 
+}
