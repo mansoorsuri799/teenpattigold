@@ -185,7 +185,7 @@ export default function MobileNavigation() {
             <Link href="/" className="flex items-center gap-3" onClick={closeMenu}>
               <div className="relative w-9 h-9 flex-shrink-0 rounded-lg overflow-hidden">
                 <Image
-                  src="/teen-patti-loot.webp"
+                  src="/teen-patti-loot-icon.webp"
                   alt="Teen Patti Loot Logo"
                   fill
                   sizes="36px"

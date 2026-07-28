@@ -37,8 +37,8 @@ export const SITE = {
   },
   images: {
     /** 512×512 app icon / brand mark */
-    logo: "/teen-patti-loot.webp",
-    hero: "/teen-patti-loot.webp",
+    logo: "/teen-patti-loot-icon.webp",
+    hero: "/teen-patti-loot-icon.webp",
     /** 1200×560 screenshots */
     game: "/teen-patti-loot-game.webp",
     pakistan: "/teen-patti-loot-pakistan.webp",

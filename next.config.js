@@ -71,19 +71,19 @@ const nextConfig = {
       },
       {
         source: '/3-patti-blue-logo.webp',
-        destination: '/teen-patti-loot.webp',
+        destination: '/teen-patti-loot-icon.webp',
       },
       {
         source: '/card-rummy.webp',
-        destination: '/teen-patti-loot.webp',
+        destination: '/teen-patti-loot-icon.webp',
       },
       {
         source: '/card-rummy-logo.webp',
-        destination: '/teen-patti-loot.webp',
+        destination: '/teen-patti-loot-icon.webp',
       },
       {
         source: '/teen-patti-loot-logo.webp',
-        destination: '/teen-patti-loot.webp',
+        destination: '/teen-patti-loot-icon.webp',
       },
     ];
   },
