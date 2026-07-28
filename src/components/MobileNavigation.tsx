@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useMobileMenu } from './MobileMenuProvider';
+import { SITE } from '@/lib/site';
 
 type NavItem = {
   href: string;
@@ -37,7 +38,7 @@ const navSections: NavSection[] = [
         ),
       },
       {
-        href: '/download-teen-patti-loot',
+        href: SITE.routes.download,
         label: 'Download',
         icon: (
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
@@ -51,7 +52,7 @@ const navSections: NavSection[] = [
     title: 'GUIDES',
     items: [
       {
-        href: '/deposit-money-in-teen-patti-loot',
+        href: SITE.routes.deposit,
         label: 'Deposit Guide',
         icon: (
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
@@ -60,7 +61,7 @@ const navSections: NavSection[] = [
         ),
       },
       {
-        href: '/withdraw-money-from-teen-patti-loot',
+        href: SITE.routes.withdraw,
         label: 'Withdraw Guide',
         icon: (
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
@@ -69,7 +70,7 @@ const navSections: NavSection[] = [
         ),
       },
       {
-        href: '/teen-patti-loot-for-pc',
+        href: SITE.routes.pc,
         label: 'PC Version',
         icon: (
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
@@ -179,21 +180,21 @@ export default function MobileNavigation() {
       <MenuButton onClick={toggleMenu} isOpen={isOpen} />
 
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex flex-col bg-[#080A21]">
+        <div className="fixed inset-0 z-50 flex flex-col bg-[#0C0906]">
           {/* Header */}
           <div className="flex justify-between items-center px-5 py-4 border-b border-gray-800/80">
             <Link href="/" className="flex items-center gap-3" onClick={closeMenu}>
               <div className="relative w-9 h-9 flex-shrink-0 rounded-lg overflow-hidden">
                 <Image
-                  src="/teen-patti-loot-icon.webp"
-                  alt="Teen Patti Loot Logo"
+                  src={SITE.images.logo}
+                  alt={`${SITE.name} Logo`}
                   fill
                   sizes="36px"
                   className="object-contain"
                   priority
                 />
               </div>
-              <span className="text-white text-lg font-bold tracking-tight">Teen Patti Loot</span>
+              <span className="text-white text-lg font-bold tracking-tight">{SITE.name}</span>
             </Link>
             <button
               onClick={closeMenu}
@@ -259,11 +260,11 @@ export default function MobileNavigation() {
           {/* Footer CTA */}
           <div className="px-5 pt-4 pb-8 border-t border-gray-800/80 flex flex-col items-center">
             <a
-              href="https://3pattilootpkk1.com/?from_gameid=4742809&channelCode=200000"
+              href={SITE.downloadUrl}
               target="_blank"
               rel="noopener noreferrer"
               onClick={closeMenu}
-              aria-label="Download Teen Patti Loot app for Android"
+              aria-label={`Download ${SITE.name} app for Android`}
               className="download-btn inline-flex items-center px-8 py-4 text-white font-semibold text-lg rounded-full border-2 border-[#0BA5E9] bg-transparent hover:bg-[#0BA5E9]/10 transition-all group"
             >
               <span>DOWNLOAD NOW</span>
@@ -274,7 +275,7 @@ export default function MobileNavigation() {
               </div>
             </a>
             <p className="text-center text-gray-500 text-xs mt-3">
-              48.5MB · Android 5.0+ · V1.232 (2026 Update)
+              {SITE.fileSize} · {SITE.os} · {SITE.version} ({SITE.updateDate})
             </p>
           </div>
         </div>

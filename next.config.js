@@ -14,7 +14,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'slotspk.com.pk',
+        hostname: 'getteenpattigold.com.pk',
       },
     ],
     formats: ['image/webp'],
@@ -31,23 +31,63 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/download-teen-patti-loot',
+        destination: '/download-teen-patti-gold',
+        permanent: true,
+      },
+      {
+        source: '/deposit-money-in-teen-patti-loot',
+        destination: '/deposit-money-in-teen-patti-gold',
+        permanent: true,
+      },
+      {
+        source: '/withdraw-money-from-teen-patti-loot',
+        destination: '/withdraw-money-from-teen-patti-gold',
+        permanent: true,
+      },
+      {
+        source: '/teen-patti-loot-for-pc',
+        destination: '/teen-patti-gold-for-pc',
+        permanent: true,
+      },
+      {
         source: '/download-card-rummy',
-        destination: '/download-teen-patti-loot',
+        destination: '/download-teen-patti-gold',
         permanent: true,
       },
       {
         source: '/deposit-money-in-card-rummy',
-        destination: '/deposit-money-in-teen-patti-loot',
+        destination: '/deposit-money-in-teen-patti-gold',
         permanent: true,
       },
       {
         source: '/withdraw-money-from-card-rummy',
-        destination: '/withdraw-money-from-teen-patti-loot',
+        destination: '/withdraw-money-from-teen-patti-gold',
         permanent: true,
       },
       {
         source: '/card-rummy-for-pc',
-        destination: '/teen-patti-loot-for-pc',
+        destination: '/teen-patti-gold-for-pc',
+        permanent: true,
+      },
+      {
+        source: '/blog/is-teen-patti-loot-safe-real-pakistan',
+        destination: '/blog/recover-teen-patti-gold-account-password',
+        permanent: true,
+      },
+      {
+        source: '/blog/create-teen-patti-loot-account-and-login',
+        destination: '/blog/teen-patti-gold-otp-not-received',
+        permanent: true,
+      },
+      {
+        source: '/blog/teen-patti-loot-bonuses-vip-guide',
+        destination: '/blog/teen-patti-gold-deposit-withdraw-time',
+        permanent: true,
+      },
+      {
+        source: '/blog/teen-patti-loot-tips-troubleshooting',
+        destination: '/blog/fix-teen-patti-gold-ip-exceeds-limit',
         permanent: true,
       },
       {
@@ -70,20 +110,24 @@ const nextConfig = {
         destination: '/public/.well-known/:path*',
       },
       {
+        source: '/teen-patti-gold-icon.webp',
+        destination: '/teen-patti-gold.webp',
+      },
+      {
+        source: '/teen-patti-loot-icon.webp',
+        destination: '/teen-patti-gold.webp',
+      },
+      {
         source: '/3-patti-blue-logo.webp',
-        destination: '/teen-patti-loot-icon.webp',
+        destination: '/teen-patti-gold.webp',
       },
       {
         source: '/card-rummy.webp',
-        destination: '/teen-patti-loot-icon.webp',
+        destination: '/teen-patti-gold.webp',
       },
       {
         source: '/card-rummy-logo.webp',
-        destination: '/teen-patti-loot-icon.webp',
-      },
-      {
-        source: '/teen-patti-loot-logo.webp',
-        destination: '/teen-patti-loot-icon.webp',
+        destination: '/teen-patti-gold.webp',
       },
     ];
   },

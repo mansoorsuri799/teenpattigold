@@ -4,8 +4,8 @@
 
 :root {
   --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 2, 6, 23;
-  --background-end-rgb: 2, 6, 23;
+  --background-start-rgb: 12, 9, 6;
+  --background-end-rgb: 12, 9, 6;
 }
 
 body {
@@ -69,7 +69,7 @@ footer {
 }
 
 .stat-card {
-  background: rgba(10, 16, 41, 0.8);
+  background: rgba(26, 20, 12, 0.8);
   border-radius: 0.75rem;
   padding: 1.5rem;
   transition: all 0.3s ease;

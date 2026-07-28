@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <h2 className="text-xl font-bold text-accent mb-4">{SITE.name}</h2>
             <p className="text-sm text-gray-300 mb-4">
-              {SITE.name} is a Teen Patti earning app for Pakistani players, with JazzCash and EasyPaisa support, clear install guidance, and practical bonus tips.
+              {SITE.name} is a Teen Patti earning app guide for Pakistani players, with JazzCash and EasyPaisa support, clear install steps, and practical troubleshooting.
             </p>
           </div>
 
@@ -63,13 +63,18 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/blog/create-teen-patti-loot-account-and-login" className="text-gray-300 hover:text-accent transition-colors">
-                  Account & Login
+                <Link href="/blog/recover-teen-patti-gold-account-password" className="text-gray-300 hover:text-accent transition-colors">
+                  Password Recovery
                 </Link>
               </li>
               <li>
-                <Link href="/blog/teen-patti-loot-tips-troubleshooting" className="text-gray-300 hover:text-accent transition-colors">
-                  Tips & Fixes
+                <Link href="/blog/fix-teen-patti-gold-ip-exceeds-limit" className="text-gray-300 hover:text-accent transition-colors">
+                  IP Limit Fix
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/enable-teen-patti-gold-weekly-bonus" className="text-gray-300 hover:text-accent transition-colors">
+                  Weekly Bonus Guide
                 </Link>
               </li>
               <li>
@@ -88,27 +93,29 @@ export default function Footer() {
           <div>
             <h2 className="text-lg font-semibold mb-4 text-accent">Download App</h2>
             <p className="text-sm text-gray-300 mb-4">
-              Download {SITE.name} APK for Android and start with clear deposit, withdraw, and bonus guidance.
+              Get the latest {SITE.name} APK ({SITE.version}, {SITE.fileSize}) for Android in Pakistan.
             </p>
             <a
               href={SITE.downloadUrl}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={`Download ${SITE.name} app for Android`}
-              className="download-btn bg-transparent hover:bg-[#0ea5e9]/10 text-white font-bold py-3 px-6 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl border-2 border-[#0ea5e9]"
+              className="inline-flex items-center px-6 py-3 text-white font-semibold rounded-full border-2 border-[#0ea5e9] hover:bg-[#0ea5e9]/10 transition-all"
             >
-              <span>DOWNLOAD NOW</span>
-              <div className="download-icon ml-2 bg-[#f97316] rounded-full p-2">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                </svg>
-              </div>
+              DOWNLOAD NOW
             </a>
+            <p className="text-xs text-gray-500 mt-4">
+              Contact:{" "}
+              <a href={`mailto:${SITE.supportEmail}`} className="text-accent hover:underline">
+                {SITE.supportEmail}
+              </a>
+            </p>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-4 pb-3 text-center text-sm text-gray-400">
-          <p className="mb-0">© 2026 {SITE.name}. All rights reserved. | <Link href="/" className="hover:text-accent">{SITE.domain}</Link></p>
+        <div className="border-t border-gray-800 mt-8 pt-4 text-center text-xs text-gray-500">
+          <p>
+            © {new Date().getFullYear()} {SITE.domain}. All rights reserved. Play responsibly. 18+.
+          </p>
         </div>
       </div>
     </footer>

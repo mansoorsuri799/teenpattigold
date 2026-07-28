@@ -1,11 +1,11 @@
 {
-  "name": "Teen Patti Loot",
-  "short_name": "Teen Patti Loot",
-  "description": "Teen Patti Loot APK for Pakistani players — download, JazzCash & EasyPaisa tips, bonuses, and safe play guidance.",
+  "name": "Teen Patti Gold",
+  "short_name": "Teen Patti Gold",
+  "description": "Teen Patti Gold APK for Pakistani players — download, JazzCash & EasyPaisa tips, bonuses, and safe play guidance.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#06091F",
-  "theme_color": "#06091F",
+  "background_color": "#0C0906",
+  "theme_color": "#0C0906",
   "icons": [
     {
       "src": "/favicon.ico",
@@ -13,7 +13,7 @@
       "type": "image/x-icon"
     },
     {
-      "src": "/teen-patti-loot-icon.webp",
+      "src": "/teen-patti-gold.webp",
       "sizes": "192x192 512x512",
       "type": "image/webp",
       "purpose": "any maskable"

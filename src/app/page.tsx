@@ -5,29 +5,31 @@ import { Metadata } from "next";
 import { SITE } from "@/lib/site";
 import { imageObjectLicensing } from "@/lib/schemaImageLicensing";
 
+const PAGE_TITLE = "Teen Patti Gold Game Download APK - Pakistani Earning";
 const META_DESCRIPTION =
-  "Download Teen Patti Loot APK for Android in Pakistan 2026. Play 3 Patti Loot with JazzCash & EasyPaisa deposits, fast PKR withdrawals, and free bonuses.";
+  "Teen Patti Gold is a popular online card game that allows you to enjoy a wide variety of games with its smooth graphics and fast gameplay. Download APK for Pakistan.";
 
 const heroImageUrl = `${SITE.origin}${SITE.images.hero}`;
 const logoImageUrl = `${SITE.origin}${SITE.images.logo}`;
 const ogImageUrl = `${SITE.origin}${SITE.images.og}`;
 const ogSquareUrl = `${SITE.origin}${SITE.images.ogSquare}`;
+
 export const metadata: Metadata = {
-  title: "Teen Patti Loot APK Download Pakistan 2026",
+  title: { absolute: PAGE_TITLE },
   description: META_DESCRIPTION,
   keywords: [
-    "Teen Patti Loot",
-    "3 Patti Loot",
-    "Teen Patti Loot APK",
-    "Teen Patti Loot download",
-    "Teen Patti Loot Pakistan",
-    "3 Patti Loot APK",
-    "Teen Patti Loot JazzCash",
-    "Teen Patti Loot EasyPaisa",
-    "Teen Patti Loot 2026",
-    "download Teen Patti Loot",
-    "Teen Patti Loot Android",
-    "Teen Patti Loot real money",
+    "Teen Patti Gold",
+    "3 Patti Gold",
+    "Teen Patti Gold APK",
+    "Teen Patti Gold download",
+    "Teen Patti Gold Pakistan",
+    "3 Patti Gold APK",
+    "Teen Patti Gold JazzCash",
+    "Teen Patti Gold EasyPaisa",
+    "Teen Patti Gold 2026",
+    "download Teen Patti Gold",
+    "Teen Patti Gold Android",
+    "getteenpattigold",
     "PKR card game app",
     "online Teen Patti Pakistan",
   ],
@@ -35,7 +37,7 @@ export const metadata: Metadata = {
     canonical: SITE.origin,
   },
   openGraph: {
-    title: "Teen Patti Loot APK Download Pakistan 2026",
+    title: PAGE_TITLE,
     description: META_DESCRIPTION,
     url: SITE.origin,
     siteName: SITE.name,
@@ -58,63 +60,80 @@ export const metadata: Metadata = {
         url: ogSquareUrl,
         width: 512,
         height: 512,
-        alt: `${SITE.name} – 3 Patti Loot card game app`,
+        alt: `${SITE.name} – 3 Patti Gold card game app`,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Teen Patti Loot APK Download Pakistan 2026",
+    title: PAGE_TITLE,
     description: META_DESCRIPTION,
     images: [heroImageUrl, ogImageUrl],
   },
 };
 
+const TOC_ITEMS = [
+  { href: "#teen-patti-gold-game-download", label: "Teen Patti Gold Game Download" },
+  { href: "#introduction", label: "Introduction to Teen Patti Gold" },
+  { href: "#what-makes-teen-patti-gold-unique", label: "What Makes Teen Patti Gold Unique" },
+  { href: "#key-gaming-features", label: "Key Gaming Features" },
+  { href: "#download-install", label: "How to Download & Install" },
+  { href: "#registration", label: "Create Account & Login" },
+  { href: "#deposit-withdraw", label: "Deposit & Withdraw" },
+  { href: "#bonuses", label: "Bonuses & Promotions" },
+  { href: "#payment-methods", label: "Payment Methods" },
+  { href: "#troubleshooting", label: "Troubleshooting" },
+  { href: "#tips", label: "Smart Play Tips" },
+  { href: "#pros-cons", label: "Pros & Cons" },
+  { href: "#safety", label: "Safety & Responsible Play" },
+  { href: "#support", label: "Customer Support" },
+  { href: "#faq", label: "FAQs" },
+  { href: "#conclusion", label: "Conclusion" },
+] as const;
+
 const FAQ_ITEMS = [
   {
-    question: "What is Teen Patti Loot?",
+    question: "What is Teen Patti Gold?",
     answer:
-      "Teen Patti Loot is a mobile card and casino-style gaming app for Pakistani Android users. It combines classic Teen Patti (3 Patti) tables with slots, Dragon vs Tiger, Andar Bahar, and other games. Players can add PKR via JazzCash or EasyPaisa and request withdrawals to local wallets or bank accounts.",
+      "Teen Patti Gold is a mobile card and casino-style gaming app for Pakistani Android users. It offers classic Teen Patti (3 Patti) tables plus popular side games. Players can add PKR via JazzCash or EasyPaisa and request withdrawals to local wallets or bank accounts when the wallet section allows it.",
   },
   {
-    question: "How do I download Teen Patti Loot APK in Pakistan?",
+    question: "How do I download Teen Patti Gold APK in Pakistan?",
+    answer: `Visit ${SITE.domain}, tap DOWNLOAD NOW, and save the APK to your phone. Enable Install from Unknown Sources in Android settings, open the file, and complete installation. The app is free and works on ${SITE.os}.`,
+  },
+  {
+    question: "Is Teen Patti Gold safe to use?",
     answer:
-      `Visit ${SITE.domain}, tap DOWNLOAD NOW, and save the APK to your phone. Enable Install from Unknown Sources in Android settings, open the file, and complete installation. The app is free and works on ${SITE.os}.`,
+      "Always download Teen Patti Gold from this official guide site, avoid cloned APKs, and never share your OTP or password. Use a strong password and bind email or phone recovery. Online gaming rules vary by region—check local laws before playing with real money.",
   },
   {
-    question: "Is Teen Patti Loot safe to use?",
+    question: "What is the minimum deposit on Teen Patti Gold?",
+    answer: `The minimum deposit on Teen Patti Gold usually starts from ${SITE.minDeposit}, depending on the payment channel shown in the Wallet section.`,
+  },
+  {
+    question: "What is the minimum withdrawal on Teen Patti Gold?",
+    answer: `Withdrawals typically start from ${SITE.minWithdraw}. JazzCash, EasyPaisa, and bank transfer options are listed inside the app with current limits and processing times.`,
+  },
+  {
+    question: "Which payment methods does Teen Patti Gold support?",
     answer:
-      "Teen Patti Loot uses encrypted connections for account and payment data. Always download from the official website, avoid cloned APKs, and never share your OTP or password. Online gaming rules vary by region—check local laws before playing with real money.",
+      "Teen Patti Gold commonly supports JazzCash, EasyPaisa, and bank card transfers for deposits and withdrawals in PKR. Exact options can change—check Wallet → Recharge / Withdraw for the live list.",
   },
   {
-    question: "What is the minimum deposit on Teen Patti Loot?",
-    answer: `The minimum deposit on Teen Patti Loot starts from ${SITE.minDeposit}, depending on the payment channel shown in the Wallet section.`,
+    question: "Can I play Teen Patti Gold on iPhone or PC?",
+    answer: `The official Teen Patti Gold APK is built for Android. PC players can follow our ${SITE.name} for PC guide using a trusted Android emulator. iPhone options are limited unless the developer publishes a separate iOS build.`,
   },
   {
-    question: "What is the minimum withdrawal on Teen Patti Loot?",
-    answer: `Withdrawals typically start from ${SITE.minWithdraw}. JazzCash, EasyPaisa, and bank transfer options are listed inside the app with current limits.`,
-  },
-  {
-    question: "Which payment methods does Teen Patti Loot support?",
+    question: "How do Teen Patti Gold bonuses work?",
     answer:
-      "Teen Patti Loot supports JazzCash, EasyPaisa, and bank card transfers for deposits and withdrawals in PKR. Processing times depend on the method and verification status.",
+      "New users may receive welcome chips or deposit-match offers. Daily login rewards, referral commissions, and VIP rebates may also appear. Bonus terms and wagering requirements are shown before you claim each offer.",
   },
   {
-    question: "Can I play Teen Patti Loot on iPhone?",
-    answer:
-      "The official Teen Patti Loot APK is built for Android. iPhone users may explore the PC guide or check the official site for any updated iOS options.",
+    question: "How do I contact Teen Patti Gold support?",
+    answer: `Use in-app live chat when available, or email ${SITE.supportEmail}. Support can help with login, OTP, IP limit errors, deposits, and withdrawals.`,
   },
   {
-    question: "How do Teen Patti Loot bonuses work?",
-    answer:
-      "New users may receive welcome chips or deposit-match offers. Daily login rewards, referral commissions, and VIP rebates are also available. Bonus terms and wagering requirements are shown before you claim each offer.",
-  },
-  {
-    question: "How do I contact Teen Patti Loot support?",
-    answer: `Use in-app live chat, WhatsApp if listed in the app, or email ${SITE.supportEmail}. Support can help with login, deposits, withdrawals, and install issues.`,
-  },
-  {
-    question: "Can I lose money on Teen Patti Loot?",
+    question: "Can I lose money on Teen Patti Gold?",
     answer:
       "Yes. Real-money games carry financial risk. Set a budget, play responsibly, and treat winnings as uncertain—not guaranteed income.",
   },
@@ -123,7 +142,7 @@ const FAQ_ITEMS = [
 const INSTALL_STEPS = [
   {
     name: "Download the APK",
-    text: `Open ${SITE.domain} in your mobile browser and tap DOWNLOAD NOW. Wait until the Teen Patti Loot APK (${SITE.fileSize}) finishes downloading.`,
+    text: `Open ${SITE.domain} in your mobile browser and tap DOWNLOAD NOW. Wait until the Teen Patti Gold APK (${SITE.fileSize}) finishes downloading.`,
   },
   {
     name: "Allow unknown sources",
@@ -131,11 +150,11 @@ const INSTALL_STEPS = [
   },
   {
     name: "Install the APK",
-    text: "Open your Downloads folder, tap the Teen Patti Loot APK file, confirm permissions, and wait for installation to complete.",
+    text: "Open your Downloads folder, tap the Teen Patti Gold APK file, confirm permissions, and wait for installation to complete.",
   },
   {
     name: "Launch and register",
-    text: "Open Teen Patti Loot, sign up with your mobile number or continue as guest, then explore games and wallet options.",
+    text: "Open Teen Patti Gold, sign up with your mobile number or continue as guest, then explore games and wallet options.",
   },
 ] as const;
 
@@ -180,7 +199,7 @@ function StarRating() {
     >
       <div className="flex items-center gap-1">
         {[1, 2, 3, 4].map((star) => (
-          <svg key={star} className="w-5 h-5 text-[#FFC107]" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+          <svg key={star} className="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
             <path d={starPath} />
           </svg>
         ))}
@@ -188,7 +207,7 @@ function StarRating() {
           <svg className="absolute inset-0 w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
             <path d={starPath} />
           </svg>
-          <svg className="absolute inset-0 w-5 h-5 text-[#FFC107]" fill="currentColor" viewBox="0 0 20 20" style={{ clipPath: "inset(0 50% 0 0)" }}>
+          <svg className="absolute inset-0 w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" style={{ clipPath: "inset(0 50% 0 0)" }}>
             <path d={starPath} />
           </svg>
         </span>
@@ -204,8 +223,8 @@ function StarRating() {
 
 function FaqItem({ question, answer }: { question: string; answer: string }) {
   return (
-    <details className="group bg-[#0a1029]/50 rounded-xl border border-gray-700 hover:border-[#FFA500]/50 transition-all duration-300 shadow-md hover:shadow-lg">
-      <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium hover:text-[#FFA500] transition-colors list-none">
+    <details className="group bg-[#1a140c]/80 rounded-xl border border-gray-700 hover:border-accent/50 transition-all duration-300 shadow-md hover:shadow-lg">
+      <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium hover:text-accent transition-colors list-none">
         <span>{question}</span>
         <span className="transition group-open:rotate-180 shrink-0 ml-4">
           <svg
@@ -238,7 +257,7 @@ export default function Home() {
         url: `${SITE.origin}/`,
         name: SITE.name,
         description:
-          "Official Teen Patti Loot APK download site for Pakistan — 3 Patti Loot games, JazzCash & EasyPaisa wallet support.",
+          "Official Teen Patti Gold APK download site for Pakistan — 3 Patti Gold games, JazzCash & EasyPaisa wallet support.",
         inLanguage: "en-US",
         publisher: { "@id": `${SITE.origin}/#organization` },
       },
@@ -246,7 +265,7 @@ export default function Home() {
         "@type": "WebPage",
         "@id": `${SITE.origin}/#webpage`,
         url: `${SITE.origin}/`,
-        name: "Teen Patti Loot APK Download Pakistan 2026",
+        name: PAGE_TITLE,
         description: META_DESCRIPTION,
         isPartOf: { "@id": `${SITE.origin}/#website` },
         about: { "@id": `${SITE.origin}/#software` },
@@ -263,12 +282,10 @@ export default function Home() {
         speakable: {
           "@type": "SpeakableSpecification",
           cssSelector: [
-            "#introduction",
-            "#features",
+            "#teen-patti-gold-game-download",
+            "#what-makes-teen-patti-gold-unique",
+            "#key-gaming-features",
             "#download-install",
-            "#registration",
-            "#login",
-            "#deposit-withdraw",
             "#faq",
           ],
         },
@@ -279,7 +296,7 @@ export default function Home() {
         url: heroImageUrl,
         contentUrl: heroImageUrl,
         name: SITE.name,
-        description: `${SITE.name} – 3 Patti Loot card game APK for Pakistani Android players.`,
+        description: `${SITE.name} – 3 Patti Gold card game APK for Pakistani Android players.`,
         width: 512,
         height: 512,
         ...imageObjectLicensing,
@@ -343,9 +360,9 @@ export default function Home() {
       {
         "@type": "HowTo",
         "@id": `${SITE.origin}/#howto-install`,
-        name: "How to Download and Install Teen Patti Loot APK on Android",
+        name: "How to Download and Install Teen Patti Gold APK on Android",
         description:
-          "Step-by-step guide to download, install, and open Teen Patti Loot on Android devices in Pakistan.",
+          "Step-by-step guide to download, install, and open Teen Patti Gold on Android devices in Pakistan.",
         totalTime: "PT5M",
         tool: [{ "@type": "HowToTool", name: "Android smartphone" }],
         step: INSTALL_STEPS.map((step, index) => ({
@@ -367,17 +384,44 @@ export default function Home() {
           },
         })),
       },
+      {
+        "@type": "SiteNavigationElement",
+        name: "Teen Patti Gold Game Download",
+        url: `${SITE.origin}/#teen-patti-gold-game-download`,
+      },
+      {
+        "@type": "SiteNavigationElement",
+        name: "What Makes Teen Patti Gold Unique",
+        url: `${SITE.origin}/#what-makes-teen-patti-gold-unique`,
+      },
+      {
+        "@type": "SiteNavigationElement",
+        name: "Key Gaming Features",
+        url: `${SITE.origin}/#key-gaming-features`,
+      },
+      {
+        "@type": "ItemList",
+        "@id": `${SITE.origin}/#toc`,
+        name: "Teen Patti Gold Table of Contents",
+        itemListElement: TOC_ITEMS.map((item, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name: item.label,
+          url: `${SITE.origin}/${item.href}`,
+        })),
+      },
     ],
   };
 
   const screenshots = [
-    { src: SITE.images.game, alt: "Teen Patti Loot game lobby and tables", label: "Game Lobby" },
-    { src: SITE.images.pakistan, alt: "Teen Patti Loot for players in Pakistan", label: "Pakistan Play" },
-    { src: SITE.images.bonus, alt: "Teen Patti Loot bonuses and rewards", label: "Bonuses & Rewards" },
-    { src: SITE.images.deposit, alt: "Teen Patti Loot deposit money screen", label: "Deposit Money" },
-    { src: SITE.images.withdraw, alt: "Teen Patti Loot withdraw money screen", label: "Withdraw Money" },
-    { src: SITE.images.refer, alt: "Teen Patti Loot refer and earn", label: "Refer & Earn" },
-    { src: SITE.images.userAccount, alt: "Teen Patti Loot user account and login", label: "User Account" },
+    { src: SITE.images.game, alt: "Teen Patti Gold game lobby and tables", label: "Game Lobby" },
+    { src: SITE.images.pakistan, alt: "Teen Patti Gold for players in Pakistan", label: "Pakistan Play" },
+    { src: SITE.images.bonus, alt: "Teen Patti Gold daily bonuses and rewards", label: "Bonuses & Rewards" },
+    { src: SITE.images.deposit, alt: "Teen Patti Gold deposit money screen", label: "Deposit Money" },
+    { src: SITE.images.withdraw, alt: "Teen Patti Gold withdraw money screen", label: "Withdraw Money" },
+    { src: SITE.images.refer, alt: "Teen Patti Gold refer and earn", label: "Refer & Earn" },
+    { src: SITE.images.userAccount, alt: "Teen Patti Gold user account and login", label: "User Account" },
+    { src: SITE.images.hots, alt: "Teen Patti Gold hot games section", label: "Hot Games" },
   ] as const;
 
   return (
@@ -390,745 +434,568 @@ export default function Home() {
       />
 
       {/* Hero */}
-      <section className="py-8 md:py-16 px-4 md:px-8 max-w-7xl mx-auto" style={{ minHeight: "400px" }}>
+      <section
+        id="teen-patti-gold-game-download"
+        className="py-8 md:py-16 px-4 md:px-8 max-w-7xl mx-auto scroll-mt-24"
+        style={{ minHeight: "400px" }}
+      >
         <div className="md:flex md:items-start md:justify-between md:space-x-12 lg:space-x-20">
           <div className="md:w-1/2 space-y-6">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
                 <span className="text-white">{SITE.name}</span>
               </h1>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-                <span className="text-[#FFA500]">APK Download</span>{" "}
-                <span className="text-white">Pakistan 2026</span>
-              </h2>
+              <p className="text-xl md:text-2xl text-accent font-semibold">
+                Game Download APK — Pakistani Earning App 2026
+              </p>
+              <p className="text-gray-300 text-lg leading-relaxed">
+                Teen Patti Gold brings classic 3 Patti tables, smooth graphics, and Fast JazzCash / EasyPaisa wallet
+                flows to Android players in Pakistan. Download the latest APK, register in minutes, and explore
+                bonuses built for everyday play.
+              </p>
             </div>
 
-            <p className="text-lg text-gray-300 leading-relaxed">
-              <Link href={SITE.routes.home} className="text-accent hover:underline">
-                {SITE.name}
-              </Link>{" "}
-              (also searched as 3 Patti Loot) is a popular Android card-game app for Pakistani players.
-              Download the official APK, play Teen Patti tables and arcade-style games, and manage your
-              wallet with JazzCash, EasyPaisa, or bank transfer in PKR. This guide covers install steps,
-              bonuses, deposits, withdrawals, and safety tips—without income promises.
-            </p>
+            <StarRating />
 
-            <div className="flex justify-center my-6">
+            <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
               <DownloadButton />
+              <Link
+                href={SITE.routes.download}
+                className="text-accent underline underline-offset-4 hover:text-white transition-colors font-medium"
+              >
+                Full install guide →
+              </Link>
             </div>
 
-            <div className="bg-[#0A1029] rounded-2xl px-6 py-4">
-              <StarRating />
-            </div>
-
-            <div className="flex flex-row gap-4 justify-center mt-6 mb-4">
-              <div className="bg-[#0A1029] p-6 rounded-2xl text-center flex-1 max-w-[180px]">
-                <svg
-                  className="w-6 h-6 mb-3 text-[#FFA500] mx-auto"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                </svg>
-                <div className="text-white text-2xl font-bold mb-1">{SITE.downloadsLabel}</div>
-                <div className="text-gray-400 text-sm">Downloads</div>
-              </div>
-              <div className="bg-[#0A1029] p-6 rounded-2xl text-center flex-1 max-w-[180px]">
-                <svg
-                  className="w-6 h-6 mb-3 text-[#FFA500] mx-auto"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                </svg>
-                <div className="text-white text-2xl font-bold mb-1">{SITE.ratingCountLabel}</div>
-                <div className="text-gray-400 text-sm">Ratings</div>
-              </div>
-              <div className="bg-[#0A1029] p-6 rounded-2xl text-center flex-1 max-w-[180px]">
-                <svg
-                  className="w-6 h-6 mb-3 text-[#FFA500] mx-auto"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
-                </svg>
-                <div className="text-white text-2xl font-bold mb-1">{SITE.fileSize}</div>
-                <div className="text-gray-400 text-sm">App Size</div>
-              </div>
-            </div>
-
-            <p className="text-gray-400 text-sm text-center italic">*Available for Android devices only</p>
-          </div>
-
-          <figure
-            className="mt-8 md:mt-0 md:w-1/2 flex justify-center md:justify-end"
-            itemScope
-            itemType="https://schema.org/ImageObject"
-          >
-            <meta itemProp="name" content={SITE.name} />
-            <meta
-              itemProp="description"
-              content={`${SITE.name} – Official APK for Android download in Pakistan 2026`}
-            />
-            <meta itemProp="url" content={heroImageUrl} />
-            <Image
-              src={SITE.images.hero}
-              alt={`${SITE.name} – Download 3 Patti Loot APK for Android in Pakistan`}
-              title={`${SITE.name} – Official APK Download Pakistan 2026`}
-              width={320}
-              height={320}
-              className="object-contain drop-shadow-2xl w-[260px] h-[260px] md:w-[320px] md:h-[320px]"
-              priority
-              fetchPriority="high"
-              quality={80}
-              sizes="(max-width: 768px) 260px, 320px"
-              itemProp="image"
-            />
-            <figcaption className="sr-only">
-              {SITE.name} official app image — download APK for Teen Patti and wallet games in Pakistan.
-            </figcaption>
-          </figure>
-        </div>
-      </section>
-
-      {/* APK Details Table */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto" id="download">
-        <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#FFA500]">Teen Patti Loot APK Details</h2>
-        <div className="mb-6">
-          <StarRating />
-        </div>
-        <div className="overflow-hidden rounded-2xl shadow-2xl border border-gray-800">
-          <div className="overflow-x-auto">
-            <table className="min-w-full divide-y divide-gray-800">
-              <tbody className="divide-y divide-gray-800">
-                {[
-                  ["App Name", SITE.name],
-                  ["Developer", SITE.developer],
-                  ["Category", SITE.category],
-                  ["Size", SITE.fileSize],
-                  ["Latest Version", SITE.version],
-                  ["Required OS", SITE.os],
-                  ["Update", SITE.updateDate],
-                  ["Downloads", SITE.downloadsLabel],
-                  ["Rating Count", `${SITE.ratingCountLabel} (${SITE.ratingValue}★)`],
-                  ["Language", SITE.languages],
-                  ["Price", "Free (0 PKR)"],
-                ].map(([label, value], i) => (
-                  <tr key={label} className={i % 2 === 0 ? "bg-[#0a1029]/50" : "bg-[#06091F]/50"}>
-                    <td className="py-4 px-6 text-left font-medium text-white">{label}</td>
-                    <td className="py-4 px-6 text-left text-white">{value}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div className="flex justify-center mt-8">
-          <DownloadButton />
-        </div>
-      </section>
-
-      {/* Introduction */}
-      <section id="introduction" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">
-            What Is Teen Patti Loot for Pakistani Players?
-          </h2>
-          <div className="space-y-6">
-            <p className="text-gray-300 leading-relaxed">
-              Teen Patti Loot is a mobile gaming platform built around the classic three-card Teen Patti
-              format that millions of Pakistanis already know from family gatherings and local card culture.
-              The app wraps that familiar 3 Patti experience in a digital lobby where you can join tables,
-              try side games like Dragon vs Tiger or Andar Bahar, and move PKR through a built-in wallet.
-            </p>
-            <p className="text-gray-300 leading-relaxed">
-              Unlike generic casino clones, Teen Patti Loot targets Pakistani users with Urdu-friendly menus,
-              JazzCash and EasyPaisa checkout, and support channels that understand local payment delays.
-              The APK is distributed outside Google Play, so this official site helps you verify version{" "}
-              {SITE.version}, file size, and update date before installing.
-            </p>
-            <p className="text-gray-300 leading-relaxed">
-              Whether you search &quot;Teen Patti Loot&quot; or &quot;3 Patti Loot,&quot; you are looking for
-              the same product: a free Android download, optional real-money play, and fast local withdrawals.
-              Read our{" "}
-              <Link href="/blog/is-teen-patti-loot-safe-real-pakistan" className="text-accent hover:underline">
-                safety guide for Pakistan
-              </Link>{" "}
-              before adding funds.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Features — expanded subsections */}
-      <section id="features" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-secondary rounded-xl p-8 space-y-10">
-          <h2 className="text-3xl font-bold text-[#FFA500]">Teen Patti Loot Features Explained</h2>
-
-          <div>
-            <h3 className="text-2xl font-semibold mb-4 text-[#FFC107]">What the app includes</h3>
-            <p className="text-gray-300 leading-relaxed mb-4">
-              Teen Patti Loot bundles card tables, quick arcade rounds, and promotional events into one APK.
-              The home screen highlights hot games, wallet balance, and daily reward banners so you can jump
-              into a Teen Patti room or explore slots without switching apps.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <dl className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm">
               {[
-                {
-                  title: "Classic Teen Patti tables",
-                  body: "Multiple stake levels for 3 Patti Loot rooms—from practice tables to higher-limit sessions.",
-                },
-                {
-                  title: "Arcade & instant games",
-                  body: "Dragon vs Tiger, Andar Bahar, crash-style games, and mini slots for variety between card rounds.",
-                },
-                {
-                  title: "PKR wallet",
-                  body: "Deposit and withdraw in Pakistani rupees using channels shown in the Wallet menu.",
-                },
-                {
-                  title: "Daily rewards",
-                  body: "Login chips, spin wheels, and event calendars that refresh on a schedule inside the app.",
-                },
-                {
-                  title: "Referral program",
-                  body: "Share your invite link and earn commission when friends register and play.",
-                },
-                {
-                  title: "VIP tiers",
-                  body: "Higher activity unlocks rebate percentages and priority support—details in the VIP section.",
-                },
-              ].map((f) => (
-                <div key={f.title} className="bg-[#0A1029] px-6 py-6 rounded-lg">
-                  <h4 className="text-lg font-semibold mb-2 text-accent">{f.title}</h4>
-                  <p className="text-gray-300 text-sm leading-relaxed">{f.body}</p>
+                ["Version", SITE.version],
+                ["Size", SITE.fileSize],
+                ["OS", SITE.os],
+                ["Updated", SITE.updateDate],
+                ["Downloads", SITE.downloadsLabel],
+                ["Price", "Free"],
+              ].map(([label, value]) => (
+                <div key={label} className="bg-[#1a140c]/80 border border-gray-800 rounded-lg p-3">
+                  <dt className="text-gray-400 text-xs uppercase tracking-wide">{label}</dt>
+                  <dd className="text-white font-semibold mt-1">{value}</dd>
                 </div>
               ))}
+            </dl>
+          </div>
+
+          <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+            <div className="relative w-64 h-64 md:w-80 md:h-80">
+              <Image
+                src={SITE.images.hero}
+                alt="Teen Patti Gold official app icon"
+                width={512}
+                height={512}
+                priority
+                fetchPriority="high"
+                className="object-contain drop-shadow-2xl"
+                sizes="(max-width: 768px) 256px, 320px"
+              />
             </div>
-          </div>
-
-          <div>
-            <h3 className="text-2xl font-semibold mb-4 text-[#FFC107]">How Teen Patti Loot works</h3>
-            <p className="text-gray-300 leading-relaxed mb-4">
-              After you install the APK and create an account, the app assigns a player ID tied to your mobile
-              number. You receive starter chips from welcome promotions, then choose a game category. Card games
-              match you with other online players or house tables depending on the mode selected.
-            </p>
-            <p className="text-gray-300 leading-relaxed mb-4">
-              When you want to play with deposited balance, open Wallet → Deposit, pick JazzCash or EasyPaisa,
-              and confirm the PKR amount. Winnings return to the same wallet. Withdrawals reverse the flow:
-              select a method, enter account details, and submit. Processing time varies by channel and
-              verification—not every request clears instantly.
-            </p>
-            <p className="text-gray-300 leading-relaxed">
-              Bonuses often carry wagering rules. The app displays required turnover before a bonus balance
-              becomes withdrawable. Always read the promo popup before accepting—this avoids surprise holds on
-              your PKR balance.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-2xl font-semibold mb-4 text-[#FFC107]">Why it is useful in Pakistan</h3>
-            <p className="text-gray-300 leading-relaxed mb-4">
-              Pakistani players need payment rails they already trust. Teen Patti Loot integrates JazzCash and
-              EasyPaisa instead of forcing international cards that many users do not have. Language options
-              including Urdu reduce friction for first-time APK installers who are new to sideloading apps.
-            </p>
-            <p className="text-gray-300 leading-relaxed">
-              The lightweight APK ({SITE.fileSize}) runs on mid-range phones common in Lahore, Karachi, and
-              Islamabad. Offline marketing often spreads WhatsApp download links—using {SITE.domain} helps you
-              confirm you have the latest build ({SITE.version}) rather than an outdated or modified copy.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-2xl font-semibold mb-4 text-[#FFC107]">Who benefits most</h3>
-            <ul className="list-disc pl-5 space-y-3 text-gray-300">
-              <li>
-                <strong className="text-white">Teen Patti fans</strong> who want mobile 3 Patti Loot tables
-                without visiting a physical venue.
-              </li>
-              <li>
-                <strong className="text-white">Casual gamers</strong> exploring Dragon vs Tiger or slots during
-                short breaks—provided they treat spend as entertainment budget.
-              </li>
-              <li>
-                <strong className="text-white">Referral marketers</strong> sharing invite links with friends who
-                already use JazzCash wallets.
-              </li>
-              <li>
-                <strong className="text-white">Returning users</strong> looking for updated APK builds, bonus
-                calendars, and{" "}
-                <Link href="/blog/teen-patti-loot-bonuses-vip-guide" className="text-accent hover:underline">
-                  VIP rebate guides
-                </Link>
-                .
-              </li>
-            </ul>
           </div>
         </div>
       </section>
+
+      {/* APK details table */}
+      <section className="px-4 md:px-8 max-w-7xl mx-auto mb-12">
+        <div className="overflow-x-auto rounded-xl border border-gray-800 bg-[#1a140c]/60">
+          <table className="w-full text-left text-sm md:text-base">
+            <caption className="sr-only">Teen Patti Gold APK information</caption>
+            <thead className="bg-[#120e0a] text-accent">
+              <tr>
+                <th scope="col" className="px-4 py-3 font-semibold">
+                  Detail
+                </th>
+                <th scope="col" className="px-4 py-3 font-semibold">
+                  Information
+                </th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-200 divide-y divide-gray-800">
+              <tr>
+                <th scope="row" className="px-4 py-3 font-medium text-gray-400">
+                  App Name
+                </th>
+                <td className="px-4 py-3">{SITE.name} / 3 Patti Gold</td>
+              </tr>
+              <tr>
+                <th scope="row" className="px-4 py-3 font-medium text-gray-400">
+                  Version
+                </th>
+                <td className="px-4 py-3">{SITE.version}</td>
+              </tr>
+              <tr>
+                <th scope="row" className="px-4 py-3 font-medium text-gray-400">
+                  Size
+                </th>
+                <td className="px-4 py-3">{SITE.fileSize}</td>
+              </tr>
+              <tr>
+                <th scope="row" className="px-4 py-3 font-medium text-gray-400">
+                  Platforms
+                </th>
+                <td className="px-4 py-3">Android ({SITE.os})</td>
+              </tr>
+              <tr>
+                <th scope="row" className="px-4 py-3 font-medium text-gray-400">
+                  Languages
+                </th>
+                <td className="px-4 py-3">{SITE.languages}</td>
+              </tr>
+              <tr>
+                <th scope="row" className="px-4 py-3 font-medium text-gray-400">
+                  Country focus
+                </th>
+                <td className="px-4 py-3">Pakistan</td>
+              </tr>
+              <tr>
+                <th scope="row" className="px-4 py-3 font-medium text-gray-400">
+                  Rating
+                </th>
+                <td className="px-4 py-3">
+                  {SITE.ratingValue} / 5 ({SITE.ratingCountLabel} ratings) · Free · Android · Game
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      {/* Table of Contents — critical for Google jump-link sitelinks */}
+      <nav
+        aria-label="Table of contents"
+        className="px-4 md:px-8 max-w-7xl mx-auto mb-14"
+        id="table-of-contents"
+      >
+        <div className="rounded-xl border border-accent/30 bg-[#1a140c]/80 p-5 md:p-6">
+          <h2 className="text-xl md:text-2xl font-bold text-accent mb-4">Table of Contents</h2>
+          <ol className="grid sm:grid-cols-2 gap-2 text-sm md:text-base list-decimal list-inside">
+            {TOC_ITEMS.map((item) => (
+              <li key={item.href} className="text-gray-300">
+                <a href={item.href} className="text-white hover:text-accent underline-offset-2 hover:underline transition-colors">
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </nav>
 
       {/* Screenshots */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-[#06091F] rounded-xl p-8">
-          <h2 className="text-4xl font-bold mb-12 text-[#FFA500] text-center">
-            Teen Patti Loot App Screenshots
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {screenshots.map((shot) => (
-              <div key={shot.src} className="w-full">
-                <div className="rounded-lg overflow-hidden shadow-2xl">
-                  <Image
-                    src={shot.src}
-                    alt={shot.alt}
-                    width={1200}
-                    height={560}
-                    className="w-full h-auto"
-                    loading="lazy"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                </div>
-                <p className="text-center text-gray-300 mt-3 font-medium">{shot.label}</p>
+      <section className="px-4 md:px-8 max-w-7xl mx-auto mb-16" aria-label="Teen Patti Gold screenshots">
+        <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">Teen Patti Gold App Screenshots</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {screenshots.map((shot) => (
+            <figure key={shot.src} className="space-y-2">
+              <div className="relative aspect-[1200/560] overflow-hidden rounded-lg border border-gray-800 bg-[#120e0a]">
+                <Image
+                  src={shot.src}
+                  alt={shot.alt}
+                  width={1200}
+                  height={560}
+                  className="object-cover w-full h-full"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                />
+              </div>
+              <figcaption className="text-sm text-gray-400 text-center">{shot.label}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      <article className="px-4 md:px-8 max-w-7xl mx-auto space-y-16 pb-20 prose-headings:scroll-mt-24">
+        <section id="introduction" className="scroll-mt-24 space-y-4">
+          <h2 className="text-3xl font-bold text-accent">Introduction to Teen Patti Gold</h2>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            Teen Patti Gold is built around the familiar South Asian three-card game that Pakistani players already
+            know as Flash or 3 Patti. The app packages that classic feel with a modern lobby, clear tables, and side
+            games that keep sessions fresh after a few rounds.
+          </p>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            On getteenpattigold.com.pk we focus on practical guidance: safe APK install steps, JazzCash and EasyPaisa
+            wallet habits, and fixes for issues people actually search for—password recovery, IP exceeds limit, OTP
+            delays, and deposit or withdrawal timing.
+          </p>
+          <div className="relative aspect-[1200/560] max-w-3xl overflow-hidden rounded-xl border border-gray-800">
+            <Image
+              src={SITE.images.pakistan}
+              alt="Teen Patti Gold Pakistan gameplay interface"
+              width={1200}
+              height={560}
+              className="object-cover w-full h-full"
+              sizes="(max-width: 768px) 100vw, 768px"
+            />
+          </div>
+        </section>
+
+        <section id="what-makes-teen-patti-gold-unique" className="scroll-mt-24 space-y-6">
+          <h2 className="text-3xl font-bold text-accent">What Makes Teen Patti Gold Unique</h2>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            Ranking pages for Teen Patti Gold often list features without explaining why they matter on Pakistani
+            phones and payment rails. Here is what actually stands out when you compare Teen Patti Gold with generic
+            card APKs.
+          </p>
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              {
+                title: "Smooth performance on mid-range phones",
+                body: "Teen Patti Gold keeps tables responsive on common Android devices used in Pakistan. Fast dealing and light loading help when you play on 4G rather than Wi-Fi.",
+              },
+              {
+                title: "Active multiplayer community",
+                body: "Public tables fill quickly during peak evening hours, so you spend less time waiting and more time in real rounds against other players.",
+              },
+              {
+                title: "Classic modes players recognize",
+                body: "Classic Teen Patti, Joker, Muflis, and AK47-style variants give beginners a familiar ladder while experienced players can switch tables for variety.",
+              },
+              {
+                title: "Local wallet-friendly flow",
+                body: "Deposit and withdraw screens are designed around JazzCash, EasyPaisa, and bank options that Pakistani users already trust for everyday transfers.",
+              },
+              {
+                title: "Private rooms for friends",
+                body: "Invite-only tables let you host family or friends without joining a crowded public lobby—useful for practice before higher stakes.",
+              },
+            ].map((item) => (
+              <div key={item.title} className="bg-[#1a140c]/80 border border-gray-800 rounded-xl p-5">
+                <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
+                <p className="text-gray-300 leading-relaxed">{item.body}</p>
               </div>
             ))}
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Bonuses */}
-      <section id="bonuses" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Teen Patti Loot Bonuses & Promotions</h2>
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-xl font-semibold mb-3 text-[#FFC107]">Welcome & first deposit offers</h3>
-              <p className="text-gray-300 leading-relaxed">
-                New accounts may receive free chips on registration plus a first-deposit match on selected PKR
-                amounts. Percentages and caps change during Eid or cricket seasons—check the Promotions tab on
-                launch day. Bonuses are not guaranteed profit; they extend playtime if terms are met.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-3 text-[#FFC107]">Daily login & spin rewards</h3>
-              <p className="text-gray-300 leading-relaxed">
-                Open Teen Patti Loot once per day to collect streak rewards. Missing a day may reset the streak
-                depending on the active event. Spin wheels and check-in calendars appear on the home banner—tap
-                before playing to avoid losing unclaimed chips.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-3 text-[#FFC107]">Referral commissions</h3>
-              <p className="text-gray-300 leading-relaxed">
-                Share your referral code from the Invite section. When a friend registers through your link and
-                meets activity thresholds, you earn a commission credited to your wallet. Spamming random groups
-                violates fair-use rules and can freeze referral earnings.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-3 text-[#FFC107]">VIP & recharge rebates</h3>
-              <p className="text-gray-300 leading-relaxed">
-                Higher VIP levels unlock daily rebate percentages on qualifying deposits. Rebates usually require
-                minimum turnover before withdrawal. See our{" "}
-                <Link href="/blog/teen-patti-loot-bonuses-vip-guide" className="text-accent hover:underline">
-                  bonuses & VIP guide
-                </Link>{" "}
-                for tier breakdowns and wagering examples.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Download & Installation */}
-      <section id="download-install" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-6 text-[#FFA500]">
-            Download & Install Teen Patti Loot APK
-          </h2>
-          <p className="text-gray-300 mb-6">
-            Follow these steps to install version {SITE.version} on Android. For a dedicated download page with
-            extra checks, visit{" "}
-            <Link href={SITE.routes.download} className="text-accent hover:underline">
-              download Teen Patti Loot
-            </Link>
-            . PC users can read{" "}
-            <Link href={SITE.routes.pc} className="text-accent hover:underline">
-              Teen Patti Loot for PC
-            </Link>
-            .
+        <section id="key-gaming-features" className="scroll-mt-24 space-y-6">
+          <h2 className="text-3xl font-bold text-accent">Key Gaming Features</h2>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            Teen Patti Gold combines the main 3 Patti experience with supporting tools that make long sessions easier
+            to manage—chat, bonuses, practice options, and clear wallet entry points.
           </p>
-          <ol className="list-decimal pl-5 space-y-4 text-gray-300 mb-8">
-            {INSTALL_STEPS.map((step) => (
-              <li key={step.name}>
-                <strong className="text-white">{step.name}:</strong> {step.text}
+          <ul className="space-y-4 text-gray-300 text-lg">
+            <li>
+              <strong className="text-white">Smooth graphics:</strong> Clean card animations and readable table UI so
+              you can track bets without squinting on smaller screens.
+            </li>
+            <li>
+              <strong className="text-white">Multiple Teen Patti variations:</strong> Switch between classic ranking,
+              lowest-hand Muflis, and joker-assisted modes when you want a different pace.
+            </li>
+            <li>
+              <strong className="text-white">Local payment options:</strong> JazzCash and EasyPaisa keep PKR top-ups
+              close to how you already send money in Pakistan.
+            </li>
+            <li>
+              <strong className="text-white">Bonuses & rewards:</strong> Daily login, referral, and recharge-style
+              offers can stretch a starting balance when terms are clear.
+            </li>
+            <li>
+              <strong className="text-white">In-game chat:</strong> Emotes and messages add a social layer without
+              leaving the table.
+            </li>
+            <li>
+              <strong className="text-white">24/7 support access:</strong> Live chat or ticket help for login, OTP, and
+              wallet questions when something blocks play.
+            </li>
+            <li>
+              <strong className="text-white">Regular updates:</strong> Fresh events and lobby content keep the Teen
+              Patti Gold download worth updating from this site.
+            </li>
+          </ul>
+          <div className="relative aspect-[1200/560] max-w-3xl overflow-hidden rounded-xl border border-gray-800">
+            <Image
+              src={SITE.images.game}
+              alt="Teen Patti Gold key gaming features in the lobby"
+              width={1200}
+              height={560}
+              className="object-cover w-full h-full"
+              sizes="(max-width: 768px) 100vw, 768px"
+            />
+          </div>
+        </section>
+
+        <section id="download-install" className="scroll-mt-24 space-y-6">
+          <h2 className="text-3xl font-bold text-accent">How to Download and Install Teen Patti Gold APK</h2>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            Google Play may not always list every regional Teen Patti Gold build. Installing from a trusted APK source
+            is normal in Pakistan—just keep Unknown Sources limited to the browser you trust.
+          </p>
+          <ol className="space-y-4">
+            {INSTALL_STEPS.map((step, index) => (
+              <li key={step.name} className="flex gap-4 bg-[#1a140c]/80 border border-gray-800 rounded-xl p-4">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent text-primary font-bold">
+                  {index + 1}
+                </span>
+                <div>
+                  <h3 className="text-lg font-semibold text-white">{step.name}</h3>
+                  <p className="text-gray-300 mt-1">{step.text}</p>
+                </div>
               </li>
             ))}
           </ol>
-          <div className="overflow-x-auto mb-8">
-            <table className="min-w-full divide-y divide-gray-800 rounded-lg overflow-hidden">
-              <thead className="bg-[#0a1029]">
-                <tr>
-                  <th className="py-3 px-6 text-left text-white font-semibold">Requirement</th>
-                  <th className="py-3 px-6 text-left text-white font-semibold">Minimum</th>
-                  <th className="py-3 px-6 text-left text-white font-semibold">Recommended</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-800">
-                <tr className="bg-[#06091F]/50">
-                  <td className="py-3 px-6 text-gray-300">OS</td>
-                  <td className="py-3 px-6 text-gray-300">{SITE.os}</td>
-                  <td className="py-3 px-6 text-gray-300">Android 10+</td>
-                </tr>
-                <tr className="bg-[#0a1029]/50">
-                  <td className="py-3 px-6 text-gray-300">RAM</td>
-                  <td className="py-3 px-6 text-gray-300">2 GB</td>
-                  <td className="py-3 px-6 text-gray-300">4 GB+</td>
-                </tr>
-                <tr className="bg-[#06091F]/50">
-                  <td className="py-3 px-6 text-gray-300">Storage</td>
-                  <td className="py-3 px-6 text-gray-300">500 MB free</td>
-                  <td className="py-3 px-6 text-gray-300">1 GB free</td>
-                </tr>
-                <tr className="bg-[#0a1029]/50">
-                  <td className="py-3 px-6 text-gray-300">Internet</td>
-                  <td className="py-3 px-6 text-gray-300">Stable 3G/Wi‑Fi</td>
-                  <td className="py-3 px-6 text-gray-300">4G/Wi‑Fi</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div className="flex justify-center">
-            <DownloadButton />
-          </div>
-        </div>
-      </section>
-
-      {/* Registration */}
-      <section id="registration" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-6 text-[#FFA500]">How to Register on Teen Patti Loot</h2>
-          <p className="text-gray-300 mb-4">
-            Registration links your mobile number to a secure wallet. Full walkthrough:{" "}
-            <Link
-              href="/blog/create-teen-patti-loot-account-and-login"
-              className="text-accent hover:underline"
-            >
-              create account & login guide
+          <DownloadButton />
+          <p className="text-gray-400 text-sm">
+            Need more detail? Read the full{" "}
+            <Link href={SITE.routes.download} className="text-accent hover:underline">
+              Teen Patti Gold download guide
             </Link>
             .
           </p>
-          <ol className="list-decimal pl-5 space-y-3 text-gray-300">
-            <li>Open Teen Patti Loot after installation.</li>
-            <li>Tap Register or Sign Up on the welcome screen.</li>
-            <li>Enter a valid Pakistani mobile number.</li>
-            <li>Create a strong password you do not reuse on banking apps.</li>
-            <li>Enter the OTP sent via SMS to verify ownership.</li>
-            <li>Optionally bind email later under Profile → Security for recovery.</li>
-            <li>Claim any new-user bonus shown on the popup—read wagering terms first.</li>
-          </ol>
-        </div>
-      </section>
+        </section>
 
-      {/* Login */}
-      <section id="login" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-6 text-[#FFA500]">How to Login to Teen Patti Loot</h2>
-          <ol className="list-decimal pl-5 space-y-3 text-gray-300 mb-6">
-            <li>Launch the app and tap Login.</li>
-            <li>Enter your registered mobile number and password.</li>
-            <li>Complete OTP verification if prompted on a new device.</li>
-            <li>Use Forgot Password if you cannot sign in—reset via SMS OTP.</li>
-            <li>Enable any in-app security lock if available before adding PKR.</li>
-          </ol>
-          <p className="text-gray-300">
-            Guest mode may limit withdrawals. For full wallet access, complete registration and bind payment
-            details under Wallet settings.
+        <section id="registration" className="scroll-mt-24 space-y-4">
+          <h2 className="text-3xl font-bold text-accent">Create Account and Login on Teen Patti Gold</h2>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            After install, open Teen Patti Gold and register with a Pakistani mobile number. Enter the OTP carefully,
+            set a password you can remember, and bind email if the app offers it—this makes password recovery much
+            easier later.
           </p>
-        </div>
-      </section>
-
-      {/* Deposit & Withdrawal overview */}
-      <section id="deposit-withdraw" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-6 text-[#FFA500]">
-            Deposits & Withdrawals Overview
-          </h2>
-          <p className="text-gray-300 leading-relaxed mb-6">
-            Teen Patti Loot uses an in-app PKR wallet. Minimum deposit starts around {SITE.minDeposit}; minimum
-            withdrawal around {SITE.minWithdraw}. Exact limits appear inside Wallet before you confirm a
-            transaction. Outcomes depend on game results—never deposit money you cannot afford to lose.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-[#0A1029] p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3 text-[#FFC107]">Adding funds</h3>
-              <p className="text-gray-300 mb-4">
-                Open Wallet → Deposit, choose JazzCash, EasyPaisa, or bank transfer, enter PKR amount, and
-                approve the payment on your wallet app. Balance updates after the gateway confirms—usually within
-                minutes.
-              </p>
-              <Link href={SITE.routes.deposit} className="text-accent hover:underline font-semibold">
-                Full deposit guide →
-              </Link>
-            </div>
-            <div className="bg-[#0A1029] p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3 text-[#FFC107]">Cashing out</h3>
-              <p className="text-gray-300 mb-4">
-                Open Wallet → Withdraw, select the same channel if possible, enter account details accurately,
-                and submit. First withdrawals may need identity or phone verification. Delays can occur during
-                peak hours or bank maintenance.
-              </p>
-              <Link href={SITE.routes.withdraw} className="text-accent hover:underline font-semibold">
-                Full withdrawal guide →
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Payment Methods */}
-      <section id="payment-methods" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Payment Methods in Pakistan</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-[#0A1029] p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3 text-[#FFC107]">JazzCash</h3>
-              <p className="text-gray-300 leading-relaxed">
-                JazzCash is widely used across Pakistan for mobile wallet deposits and withdrawals. Link the
-                same number registered on JazzCash, approve prompts in the JazzCash app, and keep transaction
-                screenshots until balance reflects in Teen Patti Loot.
-              </p>
-            </div>
-            <div className="bg-[#0A1029] p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3 text-[#FFC107]">EasyPaisa</h3>
-              <p className="text-gray-300 leading-relaxed">
-                EasyPaisa offers a similar flow for PKR transfers. Confirm merchant details match the in-app
-                payment screen before approving. Mismatch is a common sign of phishing—cancel and contact
-                support if amounts or names differ.
-              </p>
-            </div>
-            <div className="bg-[#0A1029] p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3 text-[#FFC107]">Bank transfer</h3>
-              <p className="text-gray-300 leading-relaxed">
-                Bank card or IBFT options suit larger withdrawals. Enter account title exactly as on your passbook.
-                Processing may take longer than mobile wallets but supports higher single-transaction limits where
-                available.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Troubleshooting */}
-      <section id="troubleshooting" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-6 text-[#FFA500]">Troubleshooting Common Issues</h2>
-          <p className="text-gray-300 mb-6">
-            More fixes in our{" "}
-            <Link href="/blog/teen-patti-loot-tips-troubleshooting" className="text-accent hover:underline">
-              tips & troubleshooting article
+          <p className="text-gray-300 leading-relaxed text-lg">
+            Guest play is fine for a quick look at the lobby, but convert to a full account before any deposit. For
+            forgotten passwords, follow our{" "}
+            <Link href="/blog/recover-teen-patti-gold-account-password" className="text-accent hover:underline">
+              account password recovery guide
+            </Link>
+            . If SMS never arrives, see{" "}
+            <Link href="/blog/teen-patti-gold-otp-not-received" className="text-accent hover:underline">
+              OTP not received fixes
             </Link>
             .
           </p>
-          <div className="space-y-6">
-            {[
-              {
-                title: "APK will not install",
-                body: "Enable Unknown Sources, delete old Teen Patti Loot versions, ensure at least 500 MB free storage, and re-download from the official link.",
-              },
-              {
-                title: "Parse error or corrupt file",
-                body: "The download may have interrupted. Clear browser cache, use stable Wi‑Fi, and download again. Avoid third-party Telegram APK channels.",
-              },
-              {
-                title: "Login OTP not received",
-                body: "Check SMS spam folders, confirm correct country code (+92), wait two minutes, then request a new OTP. Do not share OTP with anyone claiming to be support.",
-              },
-              {
-                title: "Deposit not credited",
-                body: "Verify payment succeeded in JazzCash/EasyPaisa history first. If debited but not credited after 30 minutes, save receipt ID and contact in-app chat with timestamp.",
-              },
-              {
-                title: "Withdrawal pending",
-                body: "Complete KYC if prompted, ensure wager requirements on active bonuses are cleared, and confirm account numbers match your wallet registration.",
-              },
-              {
-                title: "App crashes on launch",
-                body: "Update to {SITE.version}, restart phone, clear app cache (not data if logged in), or reinstall from official APK after noting your player ID.",
-              },
-            ].map((item) => (
-              <div key={item.title} className="bg-[#0A1029] p-5 rounded-lg border-l-4 border-[#FFA500]">
-                <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
-                <p className="text-gray-300">{item.body.replace("{SITE.version}", SITE.version)}</p>
-              </div>
-            ))}
+          <div className="relative aspect-[1200/560] max-w-3xl overflow-hidden rounded-xl border border-gray-800">
+            <Image
+              src={SITE.images.userAccount}
+              alt="Teen Patti Gold user account registration screen"
+              width={1200}
+              height={560}
+              className="object-cover w-full h-full"
+              sizes="(max-width: 768px) 100vw, 768px"
+            />
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Tips */}
-      <section id="tips" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-6 text-[#FFA500]">Smart Tips for Teen Patti Loot Players</h2>
-          <ul className="list-disc pl-5 space-y-3 text-gray-300">
-            <li>Start with low-stake Teen Patti tables until you understand table pace and side-show rules.</li>
-            <li>Set a daily PKR limit before opening the wallet—treat it as entertainment spend.</li>
-            <li>Claim daily bonuses but read turnover requirements before mixing bonus and cash balance.</li>
-            <li>Withdraw portions of winnings periodically instead of rolling entire balance into high-variance games.</li>
-            <li>Use referral links responsibly; fake accounts can trigger commission reversals.</li>
-            <li>Keep the app updated to {SITE.version} for security patches and payment gateway fixes.</li>
-            <li>Never install &quot;mod APKs&quot; promising guaranteed wins—they often steal credentials.</li>
-            <li>Take breaks; long sessions increase impulsive bets after losses.</li>
-          </ul>
-        </div>
-      </section>
-
-      {/* Pros & Cons */}
-      <section id="pros-cons" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Pros & Cons of Teen Patti Loot</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-xl font-semibold mb-3 text-[#4ade80]">Pros</h3>
-              <div className="bg-[#0A1029] px-8 py-8 rounded-lg">
-                <ul className="list-disc pl-5 space-y-3 text-gray-300">
-                  <li>Free APK download for Android</li>
-                  <li>Familiar Teen Patti / 3 Patti Loot gameplay</li>
-                  <li>JazzCash & EasyPaisa support in PKR</li>
-                  <li>Multiple game modes beyond classic cards</li>
-                  <li>Daily bonuses and referral commissions</li>
-                  <li>Urdu-friendly interface options</li>
-                  <li>In-app support channels</li>
-                </ul>
-              </div>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-3 text-[#f87171]">Cons</h3>
-              <div className="bg-[#0A1029] px-8 py-8 rounded-lg">
-                <ul className="list-disc pl-5 space-y-3 text-gray-300">
-                  <li>Real-money loss risk on every session</li>
-                  <li>Not listed on Google Play—requires sideloading</li>
-                  <li>Withdrawals can delay during verification or peak load</li>
-                  <li>Bonus wagering rules can confuse new users</li>
-                  <li>Addictive gameplay patterns possible</li>
-                  <li>Legal status of online gaming varies—check local rules</li>
-                  <li>Fake APK copies circulate on social media</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Safety */}
-      <section id="safety" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-6 text-[#FFA500]">Safety & Security</h2>
-          <p className="text-gray-300 leading-relaxed mb-4">
-            Teen Patti Loot encrypts traffic between the app and servers for account login and payment requests.
-            Still, APKs installed outside official stores carry inherent risk if sourced from random links. Only
-            download from {SITE.domain} or the verified redirect linked on this page.
+        <section id="deposit-withdraw" className="scroll-mt-24 space-y-4">
+          <h2 className="text-3xl font-bold text-accent">Deposit and Withdraw on Teen Patti Gold</h2>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            Open Wallet → Recharge, choose JazzCash, EasyPaisa, or bank transfer, enter an amount at or above{" "}
+            {SITE.minDeposit}, and confirm with the OTP from your wallet app. Keep the payment screenshot until the
+            balance updates.
           </p>
-          <p className="text-gray-300 leading-relaxed mb-4">
-            Protect your OTP, avoid screen-sharing during wallet transfers, and use a device PIN. Support will
-            never ask for your full password. Read{" "}
-            <Link href="/blog/is-teen-patti-loot-safe-real-pakistan" className="text-accent hover:underline">
-              Is Teen Patti Loot safe in Pakistan?
+          <p className="text-gray-300 leading-relaxed text-lg">
+            Withdrawals usually start from {SITE.minWithdraw}. Complete any KYC or binding steps the app requests
+            before your first cash-out. Typical timing varies by channel—read{" "}
+            <Link href="/blog/teen-patti-gold-deposit-withdraw-time" className="text-accent hover:underline">
+              how long deposits and withdrawals take
+            </Link>
+            , then use the dedicated{" "}
+            <Link href={SITE.routes.deposit} className="text-accent hover:underline">
+              deposit guide
             </Link>{" "}
-            for a deeper checklist on clones, permissions, and payment scams.
+            and{" "}
+            <Link href={SITE.routes.withdraw} className="text-accent hover:underline">
+              withdraw guide
+            </Link>
+            .
           </p>
-          <p className="text-gray-300 leading-relaxed">
-            Gaming should remain recreational. If deposits strain your budget or mood, stop playing and seek
-            local responsible-gaming resources. This site does not guarantee earnings or financial freedom.
-          </p>
-        </div>
-      </section>
-
-      {/* Customer Support */}
-      <section id="support" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-6 text-[#FFA500]">Customer Support</h2>
-          <p className="text-gray-300 mb-8">
-            Need help with install, login, or wallet issues? Contact Teen Patti Loot support through these
-            channels:
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-[#0A1029] p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3 text-[#FFC107]">In-app live chat</h3>
-              <p className="text-gray-300">
-                Fastest for deposit/withdraw tickets. Open Profile → Customer Service, describe the issue, and
-                attach payment receipt IDs when money is missing.
-              </p>
+          <div className="grid sm:grid-cols-2 gap-4">
+            <div className="relative aspect-[1200/560] overflow-hidden rounded-xl border border-gray-800">
+              <Image
+                src={SITE.images.deposit}
+                alt="Teen Patti Gold deposit money with JazzCash EasyPaisa"
+                width={1200}
+                height={560}
+                className="object-cover w-full h-full"
+                sizes="(max-width: 640px) 100vw, 50vw"
+              />
             </div>
-            <div className="bg-[#0A1029] p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3 text-[#FFC107]">Email</h3>
-              <p className="text-gray-300">
-                Write to{" "}
-                <a href={`mailto:${SITE.supportEmail}`} className="text-accent hover:underline">
-                  {SITE.supportEmail}
-                </a>{" "}
-                with your player ID, device model, and screenshots. Allow 24–48 hours on busy days.
-              </p>
-            </div>
-            <div className="bg-[#0A1029] p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3 text-[#FFC107]">WhatsApp / social</h3>
-              <p className="text-gray-300">
-                Official WhatsApp numbers appear inside the app only—avoid random numbers from Facebook groups.
-                Use our{" "}
-                <Link href={SITE.routes.contact} className="text-accent hover:underline">
-                  contact page
-                </Link>{" "}
-                for site-related questions.
-              </p>
+            <div className="relative aspect-[1200/560] overflow-hidden rounded-xl border border-gray-800">
+              <Image
+                src={SITE.images.withdraw}
+                alt="Teen Patti Gold withdraw money screen"
+                width={1200}
+                height={560}
+                className="object-cover w-full h-full"
+                sizes="(max-width: 640px) 100vw, 50vw"
+              />
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* FAQ */}
-      <section id="faq" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Frequently Asked Questions</h2>
-          <div className="space-y-4">
+        <section id="bonuses" className="scroll-mt-24 space-y-4">
+          <h2 className="text-3xl font-bold text-accent">Teen Patti Gold Bonuses and Promotions</h2>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            Teen Patti Gold often surfaces welcome chips, daily login rewards, recharge rebates, referral commissions,
+            and event cashback. Always read wagering rules before claiming—free chips that cannot be withdrawn until
+            conditions are met should not be treated as cash.
+          </p>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            The weekly bonus unlocks after a one-time{" "}
+            <strong className="text-white">1000 PKR</strong> deposit and stays enabled forever on that account. After
+            you claim, clear wager faster with eligible short-round games such as Fortune Gems and Dragon vs Tiger —
+            full steps in our{" "}
+            <Link href="/blog/enable-teen-patti-gold-weekly-bonus" className="text-accent hover:underline">
+              weekly bonus &amp; fast wager guide
+            </Link>
+            .
+          </p>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            Referral programs work best when friends install from a trusted link and complete registration. Our refer
+            screen below shows the kind of invite flow you will see inside the app.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-4">
+            <div className="relative aspect-[1200/560] overflow-hidden rounded-xl border border-gray-800">
+              <Image
+                src={SITE.images.bonus}
+                alt="Teen Patti Gold daily bonus rewards"
+                width={1200}
+                height={560}
+                className="object-cover w-full h-full"
+                sizes="(max-width: 640px) 100vw, 50vw"
+              />
+            </div>
+            <div className="relative aspect-[1200/560] overflow-hidden rounded-xl border border-gray-800">
+              <Image
+                src={SITE.images.refer}
+                alt="Teen Patti Gold refer and earn program"
+                width={1200}
+                height={560}
+                className="object-cover w-full h-full"
+                sizes="(max-width: 640px) 100vw, 50vw"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section id="payment-methods" className="scroll-mt-24 space-y-4">
+          <h2 className="text-3xl font-bold text-accent">Payment Methods for Pakistani Players</h2>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            JazzCash and EasyPaisa remain the fastest paths for most Teen Patti Gold users. Bank transfers help for
+            larger amounts but can take longer to confirm. Match the account name and number carefully—wrong details
+            are the top cause of delayed credits.
+          </p>
+        </section>
+
+        <section id="troubleshooting" className="scroll-mt-24 space-y-4">
+          <h2 className="text-3xl font-bold text-accent">Teen Patti Gold Troubleshooting</h2>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            The searches that actually matter after install are rarely “what is Teen Patti.” Players need password
+            recovery, IP limit fixes, OTP delivery, and wallet timing answers. Start here:
+          </p>
+          <ul className="list-disc list-inside space-y-2 text-gray-300 text-lg">
+            <li>
+              <Link href="/blog/recover-teen-patti-gold-account-password" className="text-accent hover:underline">
+                Recover Teen Patti Gold account password
+              </Link>
+            </li>
+            <li>
+              <Link href="/blog/fix-teen-patti-gold-ip-exceeds-limit" className="text-accent hover:underline">
+                Fix IP exceeds limit issue
+              </Link>
+            </li>
+            <li>
+              <Link href="/blog/teen-patti-gold-otp-not-received" className="text-accent hover:underline">
+                OTP SMS not received
+              </Link>
+            </li>
+            <li>
+              <Link href="/blog/teen-patti-gold-deposit-withdraw-time" className="text-accent hover:underline">
+                Deposit and withdraw timing
+              </Link>
+            </li>
+          </ul>
+        </section>
+
+        <section id="tips" className="scroll-mt-24 space-y-4">
+          <h2 className="text-3xl font-bold text-accent">Smart Tips for Teen Patti Gold</h2>
+          <ul className="space-y-3 text-gray-300 text-lg list-disc list-inside">
+            <li>Start on low boot tables until you learn opponents’ betting rhythm.</li>
+            <li>Do not chase losses after a bad streak—set a session limit before you open the wallet.</li>
+            <li>Fold weak hands early; Teen Patti rewards patience more than constant calling.</li>
+            <li>Bind recovery email and keep your APK updated from {SITE.domain} only.</li>
+          </ul>
+        </section>
+
+        <section id="pros-cons" className="scroll-mt-24 space-y-6">
+          <h2 className="text-3xl font-bold text-accent">Pros and Cons of Teen Patti Gold</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-[#1a140c]/80 border border-green-900/40 rounded-xl p-5">
+              <h3 className="text-xl font-semibold text-green-400 mb-3">Pros</h3>
+              <ul className="space-y-2 text-gray-300 list-disc list-inside">
+                <li>Familiar 3 Patti gameplay with multiple variants</li>
+                <li>JazzCash / EasyPaisa friendly wallet flow</li>
+                <li>Lightweight enough for everyday Android phones</li>
+                <li>Bonuses and referral value when terms are clear</li>
+              </ul>
+            </div>
+            <div className="bg-[#1a140c]/80 border border-red-900/40 rounded-xl p-5">
+              <h3 className="text-xl font-semibold text-red-400 mb-3">Cons</h3>
+              <ul className="space-y-2 text-gray-300 list-disc list-inside">
+                <li>Real-money play can become addictive</li>
+                <li>Requires stable internet for live tables</li>
+                <li>APK installs need careful Unknown Sources settings</li>
+                <li>Bonus wagering can limit instant withdrawals</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="safety" className="scroll-mt-24 space-y-4">
+          <h2 className="text-3xl font-bold text-accent">Safety and Responsible Gaming</h2>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            Download Teen Patti Gold only from this site, never share OTPs, and treat the app as entertainment—not a
+            salary replacement. If play stops being fun, take a break and use bank or wallet spending limits.
+          </p>
+        </section>
+
+        <section id="support" className="scroll-mt-24 space-y-4">
+          <h2 className="text-3xl font-bold text-accent">Customer Support for Teen Patti Gold</h2>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            Use in-app live chat for account locks, missing deposits, or IP errors. You can also email{" "}
+            <a href={`mailto:${SITE.supportEmail}`} className="text-accent hover:underline">
+              {SITE.supportEmail}
+            </a>{" "}
+            with your user ID, device model, and screenshots. Our{" "}
+            <Link href={SITE.routes.contact} className="text-accent hover:underline">
+              contact page
+            </Link>{" "}
+            lists the same channels.
+          </p>
+          <div className="relative aspect-[1200/560] max-w-3xl overflow-hidden rounded-xl border border-gray-800">
+            <Image
+              src={SITE.images.liveChat}
+              alt="Teen Patti Gold live chat customer support"
+              width={1200}
+              height={560}
+              className="object-cover w-full h-full"
+              sizes="(max-width: 768px) 100vw, 768px"
+            />
+          </div>
+        </section>
+
+        <section id="faq" className="scroll-mt-24 space-y-6">
+          <h2 className="text-3xl font-bold text-accent">Frequently Asked Questions</h2>
+          <div className="space-y-3">
             {FAQ_ITEMS.map((item) => (
               <FaqItem key={item.question} question={item.question} answer={item.answer} />
             ))}
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Conclusion + CTA */}
-      <section id="conclusion" className="pt-12 pb-16 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-secondary rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-6 text-[#FFA500]">Ready to Try Teen Patti Loot?</h2>
-          <p className="text-gray-300 leading-relaxed max-w-3xl mx-auto mb-4">
-            Teen Patti Loot brings 3 Patti Loot tables, local PKR payments, and regular promotions to Android
-            users across Pakistan. Download version {SITE.version} from the official link, register with your
-            mobile number, and explore games responsibly—only with money you can afford to lose.
+        <section id="conclusion" className="scroll-mt-24 space-y-4">
+          <h2 className="text-3xl font-bold text-accent">Conclusion</h2>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            Teen Patti Gold remains one of the strongest branded 3 Patti downloads for Pakistani Android users who want
+            classic tables, local wallets, and clear support paths. Use getteenpattigold.com.pk for the APK, follow the
+            install steps, and keep our troubleshooting blogs bookmarked for password, IP, OTP, and timing issues.
           </p>
-          <p className="text-gray-400 text-sm max-w-2xl mx-auto mb-8">
-            Updated {SITE.updateDate}. Ratings: {SITE.ratingValue}/5 from {SITE.ratingCountLabel} users. Free ·
-            Android · Game.
-          </p>
-          <div className="flex flex-col items-center gap-6">
-            <DownloadButton />
-            <div className="flex flex-wrap justify-center gap-4 text-sm">
-              <Link href={SITE.routes.download} className="text-accent hover:underline">
-                Download page
-              </Link>
-              <Link href={SITE.routes.blog} className="text-accent hover:underline">
-                Blog guides
-              </Link>
-              <Link href={SITE.routes.disclaimer} className="text-accent hover:underline">
-                Disclaimer
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+          <DownloadButton />
+        </section>
+      </article>
     </>
   );
 }

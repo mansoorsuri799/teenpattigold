@@ -23,7 +23,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
-  themeColor: "#06091F",
+  themeColor: "#0C0906",
   viewportFit: "cover",
   interactiveWidget: "resizes-visual",
 };
@@ -31,22 +31,22 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.origin),
   title: {
-    default: "Teen Patti Loot APK Download Pakistan 2026",
+    default: "Teen Patti Gold Game Download APK - Pakistani Earning",
     template: `%s | ${SITE.name}`,
   },
   description:
-    "Download Teen Patti Loot APK for Android in Pakistan. Install guide, JazzCash & EasyPaisa tips, bonuses, and safe play steps on teenpattilootapp.com.pk.",
+    "Download Teen Patti Gold APK for Android in Pakistan. Install guide, JazzCash & EasyPaisa tips, bonuses, and safe play steps on getteenpattigold.com.pk.",
   keywords: [
-    "Teen Patti Loot",
-    "Teen Patti Loot APK",
-    "3 Patti Loot",
-    "Teen Patti Loot download",
-    "Teen Patti Loot Pakistan",
-    "3 Patti Loot APK",
+    "Teen Patti Gold",
+    "Teen Patti Gold APK",
+    "3 Patti Gold",
+    "Teen Patti Gold download",
+    "Teen Patti Gold Pakistan",
+    "3 Patti Gold APK",
     "Teen Patti earning app",
     "JazzCash Teen Patti",
     "EasyPaisa Teen Patti",
-    "Teen Patti Loot 2026",
+    "Teen Patti Gold 2026",
   ],
   authors: [{ name: `${SITE.name} Team` }],
   creator: SITE.name,
@@ -75,9 +75,9 @@ export const metadata: Metadata = {
     canonical: SITE.origin,
   },
   openGraph: {
-    title: "Teen Patti Loot APK Download Pakistan 2026",
+    title: "Teen Patti Gold Game Download APK - Pakistani Earning",
     description:
-      "Download Teen Patti Loot APK for Android in Pakistan. JazzCash & EasyPaisa tips, bonuses, and safe install steps.",
+      "Download Teen Patti Gold APK for Android in Pakistan. JazzCash & EasyPaisa tips, bonuses, and safe install steps.",
     url: SITE.origin,
     siteName: SITE.name,
     locale: "en_US",
@@ -99,9 +99,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Teen Patti Loot APK Download Pakistan 2026",
+    title: "Teen Patti Gold Game Download APK - Pakistani Earning",
     description:
-      "Download Teen Patti Loot APK for Android in Pakistan. JazzCash & EasyPaisa tips, bonuses, and safe install steps.",
+      "Download Teen Patti Gold APK for Android in Pakistan. JazzCash & EasyPaisa tips, bonuses, and safe install steps.",
     images: [
       {
         url: `${SITE.origin}${SITE.images.twitter}`,
@@ -165,7 +165,7 @@ export default function RootLayout({
         className={`${poppins.className} antialiased bg-primary text-white min-h-screen flex flex-col`}
         style={{
           backgroundImage:
-            "radial-gradient(circle at 10% 20%, rgba(10, 16, 41, 0.4) 0%, rgba(6, 9, 31, 0.01) 90%)",
+            "radial-gradient(circle at 10% 20%, rgba(40, 28, 12, 0.55) 0%, rgba(12, 9, 6, 0.01) 90%)",
           backgroundAttachment: "fixed",
           minHeight: "100vh",
         }}
@@ -192,7 +192,7 @@ export default function RootLayout({
               url: SITE.origin,
               logo: `${SITE.origin}${SITE.images.logo}`,
               description:
-                "Teen Patti Loot is a Teen Patti APK guide and download hub for Pakistani players with JazzCash and EasyPaisa support.",
+                "Teen Patti Gold is a Teen Patti APK guide and download hub for Pakistani players with JazzCash and EasyPaisa support.",
             }),
           }}
         />

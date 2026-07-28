@@ -14,18 +14,18 @@ export default function AppleIcon() {
       <div
         style={{
           fontSize: 100,
-          background: '#FFA500',
+          background: '#F0B020',
           width: '100%',
           height: '100%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          color: 'white',
+          color: '#0C0906',
           fontWeight: 'bold',
           borderRadius: '20%',
         }}
       >
-        TPL
+        TPG
       </div>
     ),
     {
