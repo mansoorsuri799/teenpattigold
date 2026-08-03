@@ -413,17 +413,6 @@ export default function Home() {
     ],
   };
 
-  const screenshots = [
-    { src: SITE.images.game, alt: "Teen Patti Gold game lobby and tables", label: "Game Lobby" },
-    { src: SITE.images.pakistan, alt: "Teen Patti Gold for players in Pakistan", label: "Pakistan Play" },
-    { src: SITE.images.bonus, alt: "Teen Patti Gold daily bonuses and rewards", label: "Bonuses & Rewards" },
-    { src: SITE.images.deposit, alt: "Teen Patti Gold deposit money screen", label: "Deposit Money" },
-    { src: SITE.images.withdraw, alt: "Teen Patti Gold withdraw money screen", label: "Withdraw Money" },
-    { src: SITE.images.refer, alt: "Teen Patti Gold refer and earn", label: "Refer & Earn" },
-    { src: SITE.images.userAccount, alt: "Teen Patti Gold user account and login", label: "User Account" },
-    { src: SITE.images.hots, alt: "Teen Patti Gold hot games section", label: "Hot Games" },
-  ] as const;
-
   return (
     <>
       <Script
@@ -585,28 +574,6 @@ export default function Home() {
           </ol>
         </div>
       </nav>
-
-      {/* Screenshots */}
-      <section className="px-4 md:px-8 max-w-7xl mx-auto mb-16" aria-label="Teen Patti Gold screenshots">
-        <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">Teen Patti Gold App Screenshots</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {screenshots.map((shot) => (
-            <figure key={shot.src} className="space-y-2">
-              <div className="relative aspect-[1200/560] overflow-hidden rounded-lg border border-gray-800 bg-[#120e0a]">
-                <Image
-                  src={shot.src}
-                  alt={shot.alt}
-                  width={1200}
-                  height={560}
-                  className="object-cover w-full h-full"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                />
-              </div>
-              <figcaption className="text-sm text-gray-400 text-center">{shot.label}</figcaption>
-            </figure>
-          ))}
-        </div>
-      </section>
 
       <article className="px-4 md:px-8 max-w-7xl mx-auto space-y-16 pb-20 prose-headings:scroll-mt-24">
         <section id="introduction" className="scroll-mt-24 space-y-4">
