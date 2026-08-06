@@ -39,6 +39,7 @@ export default function PcPage() {
     name: SITE.name,
     operatingSystem: "Windows 10+, Android (via emulator)",
     applicationCategory: "GameApplication",
+    inLanguage: ["en", "ur", "hi"],
     offers: {
       "@type": "Offer",
       price: SITE.price,
