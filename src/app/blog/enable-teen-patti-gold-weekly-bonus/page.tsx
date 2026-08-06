@@ -309,11 +309,11 @@ export default function WeeklyBonusGuidePage() {
             <li>Prefer Fortune Gems or Dragon vs Tiger when the promo lists them as eligible.</li>
             <li>Stop when the wager meter hits 100%, then use the withdraw flow rather than continuing on tilt.</li>
             <li>
-              If payout timing is unclear after you finish, read{" "}
-              <Link href="/blog/teen-patti-gold-deposit-withdraw-time" className="text-accent hover:underline">
-                deposit and withdraw timing
-              </Link>
-              .
+              If payout timing is unclear after you finish, read the{" "}
+              <Link href={SITE.routes.withdraw} className="text-accent hover:underline">
+                withdraw guide
+              </Link>{" "}
+              timing section.
             </li>
           </ul>
         </section>

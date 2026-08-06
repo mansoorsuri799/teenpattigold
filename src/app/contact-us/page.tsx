@@ -37,7 +37,7 @@ export default function ContactPage() {
         "@type": "ContactPoint",
         email: SITE.supportEmail,
         contactType: "Customer Support",
-        availableLanguage: ["English", "Urdu"],
+        availableLanguage: ["English"],
       },
     },
   };
@@ -85,6 +85,7 @@ export default function ContactPage() {
             content on {SITE.domain} — including{" "}
             <Link href={SITE.routes.download} className="text-[#0ea5e9] hover:underline">APK download</Link>,{" "}
             <Link href={SITE.routes.deposit} className="text-[#0ea5e9] hover:underline">deposit help</Link>,{" "}
+            <Link href={SITE.routes.withdraw} className="text-[#0ea5e9] hover:underline">withdraw help</Link>,{" "}
             <Link href={SITE.routes.privacy} className="text-[#0ea5e9] hover:underline">privacy policy</Link>, and{" "}
             <Link href={SITE.routes.about} className="text-[#0ea5e9] hover:underline">about us</Link>.
           </p>

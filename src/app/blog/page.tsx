@@ -7,7 +7,7 @@ const canonical = `${SITE.origin}${SITE.routes.blog}`;
 export const metadata: Metadata = {
   title: "Teen Patti Gold Blog",
   description:
-    "Guides, safety checks, account setup, bonuses, and troubleshooting for Teen Patti Gold APK players in Pakistan. Updated July 2026.",
+    "Guides for Teen Patti Gold in Pakistan — weekly bonus wagering, password recovery, IP exceeds limit, and OTP SMS fixes. Updated August 2026.",
   keywords: [
     "Teen Patti Gold blog",
     "Teen Patti Gold guide",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Teen Patti Gold Blog",
     description:
-      "Safety guides, login help, wallet timing, and install fixes for Teen Patti Gold players in Pakistan.",
+      "Weekly bonus, login recovery, IP limit, and OTP fixes for Teen Patti Gold players in Pakistan.",
     url: canonical,
     siteName: SITE.name,
     locale: "en_US",

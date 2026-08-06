@@ -11,7 +11,7 @@ export const SITE = {
   version: "V1.660",
   fileSize: "54MB",
   os: "Android 5.0+",
-  updateDate: "29-July-2026",
+  updateDate: "06-August-2026",
   ratingValue: "4.5",
   ratingCount: "500000",
   ratingCountLabel: "500,000",
@@ -20,10 +20,11 @@ export const SITE = {
   currency: "PKR",
   minDeposit: "100 PKR",
   minWithdraw: "100 PKR",
-  languages: "English, Urdu, Hindi",
+  /** Guide site language only — do not claim Urdu/Hindi pages we do not publish */
+  languages: "English",
   category: "Cards, Game",
   developer: "Teen Patti Gold",
-  facebookUrl: "https://www.facebook.com/",
+  facebookUrl: "",
   routes: {
     home: "/",
     download: "/download-teen-patti-gold",
@@ -74,7 +75,7 @@ export const SITE = {
       title: "How to Enable Teen Patti Gold Weekly Bonus & Clear Wager Fast",
       description:
         "Deposit 1000 PKR once to unlock the weekly bonus forever, then use Fortune Gems, Dragon vs Tiger, and other fast games to finish wagering.",
-      date: "2026-07-29",
+      date: "2026-08-06",
       readTime: "8 min read",
     },
     {
@@ -82,7 +83,7 @@ export const SITE = {
       title: "How to Recover Teen Patti Gold Account Password?",
       description:
         "Reset a forgotten Teen Patti Gold password with OTP, email, or live chat — safe steps for Pakistani players.",
-      date: "2026-07-29",
+      date: "2026-08-06",
       readTime: "7 min read",
     },
     {
@@ -90,23 +91,15 @@ export const SITE = {
       title: "How to Fix Teen Patti Gold IP Exceeds Limit Issue?",
       description:
         "Clear causes and fixes for the Teen Patti Gold IP exceeds limit error on Android Wi-Fi and mobile data.",
-      date: "2026-07-29",
+      date: "2026-08-06",
       readTime: "8 min read",
-    },
-    {
-      slug: "teen-patti-gold-deposit-withdraw-time",
-      title: "How Long Do Teen Patti Gold Deposits and Withdrawals Take?",
-      description:
-        "Typical JazzCash, EasyPaisa, and bank timing for Teen Patti Gold deposits and withdrawals in Pakistan.",
-      date: "2026-07-29",
-      readTime: "6 min read",
     },
     {
       slug: "teen-patti-gold-otp-not-received",
       title: "Teen Patti Gold OTP Not Received? Fix Login SMS Delay",
       description:
         "Practical fixes when Teen Patti Gold OTP SMS is delayed or missing during registration and login.",
-      date: "2026-07-29",
+      date: "2026-08-06",
       readTime: "6 min read",
     },
   ],

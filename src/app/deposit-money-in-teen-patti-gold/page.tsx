@@ -33,6 +33,33 @@ export const metadata: Metadata = {
 };
 
 export default function DepositMoneyPage() {
+  const depositFaq = [
+    {
+      question: "Money deducted but chips not added in Teen Patti Gold?",
+      answer:
+        "Wait five minutes, then restart the app. If still missing, note the JazzCash or EasyPaisa transaction ID and contact in-app support with a screenshot — do not submit a second payment.",
+    },
+    {
+      question: "What is the minimum deposit on Teen Patti Gold?",
+      answer: `The in-app floor is usually ${SITE.minDeposit}. Smaller custom amounts may be blocked even if your wallet allows micro-transfers.`,
+    },
+    {
+      question: "Why is a Teen Patti Gold payment method greyed out?",
+      answer:
+        "Maintenance windows or regional routing can temporarily hide a channel. Try an alternate method or check back after an hour.",
+    },
+    {
+      question: "Teen Patti Gold deposit bonus not credited?",
+      answer:
+        "Recharge rebates often require entering a promo code or selecting a tagged preset amount. Read the promo terms — wagering may apply before withdrawal.",
+    },
+    {
+      question: "How long do Teen Patti Gold deposits take?",
+      answer:
+        "JazzCash and EasyPaisa usually credit within about 30–90 seconds when the merchant approval succeeds. Bank transfers can take 15–60 minutes. Timing is not guaranteed during peak hours or wallet maintenance.",
+    },
+  ] as const;
+
   const howToSchema = {
     "@context": "https://schema.org",
     "@type": "HowTo",
@@ -44,6 +71,16 @@ export default function DepositMoneyPage() {
       { "@type": "HowToStep", position: 3, name: "Enter amount", text: `Select an amount from ${SITE.minDeposit} upward.` },
       { "@type": "HowToStep", position: 4, name: "Confirm payment", text: "Approve the request in your wallet app and wait for balance update." },
     ],
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: depositFaq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
   };
 
   const breadcrumbSchema = {
@@ -58,6 +95,7 @@ export default function DepositMoneyPage() {
   return (
     <article>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 pt-6">
@@ -196,15 +234,15 @@ export default function DepositMoneyPage() {
             {[
               {
                 name: "JazzCash",
-                tip: "Ensure balance covers the deposit plus any JazzCash transfer fee. Biometric login speeds up merchant approvals. Failed attempts often mean incorrect PIN or daily send limit reached.",
+                tip: "Ensure balance covers the deposit plus any JazzCash transfer fee. Biometric login speeds up merchant approvals. Failed attempts often mean incorrect PIN or daily send limit reached. Confirm the merchant name matches Teen Patti Gold before you approve.",
               },
               {
                 name: "EasyPaisa",
-                tip: "Use the same SIM registered on your EasyPaisa wallet. If OTP to EasyPaisa fails, toggle mobile data and retry once. Keep the app on the latest Play Store version.",
+                tip: "Use the same SIM registered on your EasyPaisa wallet. If OTP to EasyPaisa fails, toggle mobile data and retry once. Keep the app on the latest Play Store version and never share the EasyPaisa PIN with chat agents.",
               },
               {
                 name: "Bank Transfer",
-                tip: "When available, copy the reference number character-for-character. Bank deposits can take 15–60 minutes versus near-instant mobile wallets. Screenshot the transfer receipt.",
+                tip: "When available, copy the reference number character-for-character. Bank deposits can take 15–60 minutes versus near-instant mobile wallets. Screenshot the transfer receipt and keep it until chips credit.",
               },
             ].map((m) => (
               <div key={m.name} className="bg-[#1a140c] rounded-lg p-6 border border-gray-800">
@@ -217,30 +255,37 @@ export default function DepositMoneyPage() {
       </section>
 
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+        <div className="max-w-4xl mx-auto bg-[#1A140C] rounded-2xl p-8 md:p-10 border border-gray-800">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#FFA500] mb-4">How Long Deposits Usually Take</h2>
+          <p className="text-gray-300 leading-relaxed mb-4">
+            JazzCash and EasyPaisa top-ups that finish merchant approval typically refresh the Teen Patti Gold balance
+            within about 30–90 seconds on a stable connection. Bank rails are slower — plan for 15–60 minutes, longer
+            outside banking hours. Peak evening play and wallet maintenance can stretch any of those windows.
+          </p>
+          <p className="text-gray-300 leading-relaxed mb-4">
+            A past fast deposit does not guarantee the next one. If money left your wallet but chips did not arrive after
+            five minutes, restart the app once, then open support with the transaction ID. Do not send a second payment
+            for the same amount while the first is unsettled.
+          </p>
+          <p className="text-gray-300 leading-relaxed">
+            After your balance updates, set a session budget before joining tables. When you later need to cash out, follow
+            the{" "}
+            <Link href={SITE.routes.withdraw} className="text-[#0ea5e9] hover:underline">
+              withdraw guide
+            </Link>{" "}
+            for eligibility and payout timing notes.
+          </p>
+        </div>
+      </section>
+
+      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-center text-white mb-8">Common Deposit Issues</h2>
           <div className="space-y-4">
-            {[
-              {
-                q: "Money deducted but chips not added",
-                a: "Wait five minutes, then restart the app. If still missing, note the JazzCash/EasyPaisa transaction ID and contact in-app support with a screenshot — do not submit a second payment.",
-              },
-              {
-                q: "Minimum amount error",
-                a: `The in-app floor is usually ${SITE.minDeposit}. Smaller custom amounts may be blocked even if your wallet allows micro-transfers.`,
-              },
-              {
-                q: "Payment method greyed out",
-                a: "Maintenance windows or regional routing can temporarily hide a channel. Try an alternate method or check back after an hour.",
-              },
-              {
-                q: "Bonus not credited",
-                a: "Recharge rebates often require entering a promo code or selecting a tagged preset amount. Read the promo terms — wagering may apply before withdrawal.",
-              },
-            ].map((item) => (
-              <div key={item.q} className="bg-[#1A140C] rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-[#FFC107] mb-2">{item.q}</h3>
-                <p className="text-gray-300">{item.a}</p>
+            {depositFaq.map((item) => (
+              <div key={item.question} className="bg-[#1A140C] rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-[#FFC107] mb-2">{item.question}</h3>
+                <p className="text-gray-300">{item.answer}</p>
               </div>
             ))}
           </div>
@@ -251,7 +296,7 @@ export default function DepositMoneyPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl font-bold text-white mb-4">Need to Cash Out Later?</h2>
           <p className="text-gray-300 mb-6 leading-relaxed">
-            After playing, follow our withdraw guide to request a payout to the same wallet type when your balance becomes eligible. Processing times vary — we explain typical JazzCash and EasyPaisa delays there.
+            After playing, follow our withdraw guide to request a payout to the same wallet type when your balance becomes eligible. Processing times vary — JazzCash and EasyPaisa timing notes are covered on that page.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href={SITE.routes.withdraw} className="text-[#0ea5e9] hover:text-[#FFA500] font-semibold">

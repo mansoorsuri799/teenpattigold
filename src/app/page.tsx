@@ -7,7 +7,7 @@ import { imageObjectLicensing } from "@/lib/schemaImageLicensing";
 
 const PAGE_TITLE = "Teen Patti Gold Pakistan v1.660 Download Official APK";
 const META_DESCRIPTION =
-  "Teen Patti Gold is a popular online card game that allows you to enjoy a wide variety of games with its smooth graphics and fast gameplay. Download APK for Pakistan.";
+  "Download Teen Patti Gold APK for Pakistan — install steps, JazzCash & EasyPaisa wallet tips, bonuses, how to play, and safe Android setup on getteenpattigold.com.pk.";
 
 const heroImageUrl = `${SITE.origin}${SITE.images.hero}`;
 const logoImageUrl = `${SITE.origin}${SITE.images.logo}`;
@@ -77,6 +77,8 @@ const TOC_ITEMS = [
   { href: "#introduction", label: "Introduction to Teen Patti Gold" },
   { href: "#what-makes-teen-patti-gold-unique", label: "What Makes Teen Patti Gold Unique" },
   { href: "#key-gaming-features", label: "Key Gaming Features" },
+  { href: "#game-modes", label: "Game Modes & Side Games" },
+  { href: "#how-to-play", label: "How to Play Teen Patti Gold" },
   { href: "#download-install", label: "How to Download & Install" },
   { href: "#registration", label: "Create Account & Login" },
   { href: "#deposit-withdraw", label: "Deposit & Withdraw" },
@@ -136,6 +138,16 @@ const FAQ_ITEMS = [
     question: "Can I lose money on Teen Patti Gold?",
     answer:
       "Yes. Real-money games carry financial risk. Set a budget, play responsibly, and treat winnings as uncertain—not guaranteed income.",
+  },
+  {
+    question: "How do I play Teen Patti Gold for the first time?",
+    answer:
+      "Join a low-boot public table, receive three cards, then choose to play blind or seen. Bet, call, raise, or fold until showdown. The best hand (or lowest in Muflis) wins the pot. Start small until you learn table pace.",
+  },
+  {
+    question: "Does Teen Patti Gold work with JazzCash and EasyPaisa?",
+    answer:
+      "Yes. Most Pakistani players recharge and withdraw through JazzCash or EasyPaisa from the in-app Wallet. Exact limits and processing times appear inside the app before you confirm.",
   },
 ] as const;
 
@@ -285,6 +297,8 @@ export default function Home() {
             "#teen-patti-gold-game-download",
             "#what-makes-teen-patti-gold-unique",
             "#key-gaming-features",
+            "#game-modes",
+            "#how-to-play",
             "#download-install",
             "#faq",
           ],
@@ -314,7 +328,7 @@ export default function Home() {
           ...imageObjectLicensing,
           creditText: `${SITE.name} logo`,
         },
-        sameAs: [SITE.facebookUrl],
+        sameAs: SITE.facebookUrl ? [SITE.facebookUrl] : undefined,
         contactPoint: {
           "@type": "ContactPoint",
           email: SITE.supportEmail,
@@ -584,9 +598,30 @@ export default function Home() {
             games that keep sessions fresh after a few rounds.
           </p>
           <p className="text-gray-300 leading-relaxed text-lg">
+            Players searching for a Teen Patti Gold APK in Pakistan usually want three things: a clean Android install,
+            JazzCash or EasyPaisa wallet steps they can follow without guessing, and honest answers when login, OTP, or
+            IP errors appear. That is the focus of this guide—not filler promises about “instant riches.”
+          </p>
+          <p className="text-gray-300 leading-relaxed text-lg">
             On getteenpattigold.com.pk we focus on practical guidance: safe APK install steps, JazzCash and EasyPaisa
             wallet habits, and fixes for issues people actually search for—password recovery, IP exceeds limit, OTP
-            delays, and deposit or withdrawal timing.
+            delays, and deposit or withdrawal timing. Dedicated pages cover{" "}
+            <Link href={SITE.routes.download} className="text-accent hover:underline">
+              download
+            </Link>
+            ,{" "}
+            <Link href={SITE.routes.deposit} className="text-accent hover:underline">
+              deposits
+            </Link>
+            ,{" "}
+            <Link href={SITE.routes.withdraw} className="text-accent hover:underline">
+              withdrawals
+            </Link>
+            , and{" "}
+            <Link href={SITE.routes.pc} className="text-accent hover:underline">
+              PC emulator play
+            </Link>{" "}
+            so every intent has its own URL.
           </p>
           <div className="relative aspect-[1200/560] max-w-3xl overflow-hidden rounded-xl border border-gray-800">
             <Image
@@ -642,42 +677,71 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-accent">Key Gaming Features</h2>
           <p className="text-gray-300 leading-relaxed text-lg">
             Teen Patti Gold combines the main 3 Patti experience with supporting tools that make long sessions easier
-            to manage—chat, bonuses, practice options, and clear wallet entry points.
+            to manage—clear tables, wallet entry points, bonuses with visible terms, and recovery options when login
+            fails. Below is what each feature actually does for a Pakistani Android player.
           </p>
-          <ul className="space-y-4 text-gray-300 text-lg">
-            <li>
-              <strong className="text-white">Smooth graphics:</strong> Clean card animations and readable table UI so
-              you can track bets without squinting on smaller screens.
-            </li>
-            <li>
-              <strong className="text-white">Multiple Teen Patti variations:</strong> Switch between classic ranking,
-              lowest-hand Muflis, and joker-assisted modes when you want a different pace.
-            </li>
-            <li>
-              <strong className="text-white">Local payment options:</strong> JazzCash and EasyPaisa keep PKR top-ups
-              close to how you already send money in Pakistan.
-            </li>
-            <li>
-              <strong className="text-white">Bonuses & rewards:</strong> Daily login, referral, and recharge-style
-              offers can stretch a starting balance when terms are clear.
-            </li>
-            <li>
-              <strong className="text-white">In-game chat:</strong> Emotes and messages add a social layer without
-              leaving the table.
-            </li>
-            <li>
-              <strong className="text-white">24/7 support access:</strong> Live chat or ticket help for login, OTP, and
-              wallet questions when something blocks play.
-            </li>
-            <li>
-              <strong className="text-white">Regular updates:</strong> Fresh events and lobby content keep the Teen
-              Patti Gold download worth updating from this site.
-            </li>
-          </ul>
+
+          <div className="space-y-6">
+            <div className="bg-[#1a140c]/80 border border-gray-800 rounded-xl p-5">
+              <h3 className="text-xl font-semibold text-white mb-2">Readable tables on mid-range Android phones</h3>
+              <p className="text-gray-300 leading-relaxed">
+                Card ranks, pot size, and turn timers stay easy to read on smaller screens. That matters when you play
+                on 4G in the evening and need to fold or raise before the timer ends. Players who switch between Wi-Fi
+                and mobile data benefit from a lobby that reloads without forcing a full reinstall.
+              </p>
+            </div>
+            <div className="bg-[#1a140c]/80 border border-gray-800 rounded-xl p-5">
+              <h3 className="text-xl font-semibold text-white mb-2">Classic Teen Patti variants in one lobby</h3>
+              <p className="text-gray-300 leading-relaxed">
+                Classic ranking, Muflis (lowest hand wins), Joker, and AK47-style tables sit in the same app so you can
+                change pace without downloading another APK. Beginners usually start on Classic; experienced players
+                move to Muflis or Joker when they want a different risk profile.
+              </p>
+            </div>
+            <div className="bg-[#1a140c]/80 border border-gray-800 rounded-xl p-5">
+              <h3 className="text-xl font-semibold text-white mb-2">JazzCash and EasyPaisa wallet entry</h3>
+              <p className="text-gray-300 leading-relaxed">
+                Recharge and withdraw screens list local PKR channels most Pakistani users already use for bills and
+                transfers. Matching the wallet number carefully and saving the payment screenshot until chips credit
+                prevents most “missing deposit” tickets. Full steps live on our{" "}
+                <Link href={SITE.routes.deposit} className="text-accent hover:underline">
+                  deposit guide
+                </Link>
+                .
+              </p>
+            </div>
+            <div className="bg-[#1a140c]/80 border border-gray-800 rounded-xl p-5">
+              <h3 className="text-xl font-semibold text-white mb-2">Bonuses with visible wagering rules</h3>
+              <p className="text-gray-300 leading-relaxed">
+                Daily login, referral, recharge rebates, and the weekly bonus after a 1000 PKR unlock can stretch a
+                starting balance—only when you read claim conditions first. Free chips that need wagering should never
+                be treated as cash you can withdraw the same minute.
+              </p>
+            </div>
+            <div className="bg-[#1a140c]/80 border border-gray-800 rounded-xl p-5">
+              <h3 className="text-xl font-semibold text-white mb-2">Private rooms and table chat</h3>
+              <p className="text-gray-300 leading-relaxed">
+                Invite-only tables let friends practice without joining a crowded public lobby. Emotes and short chat
+                keep the social feel of home Flash games while you still control boot size and guest list.
+              </p>
+            </div>
+            <div className="bg-[#1a140c]/80 border border-gray-800 rounded-xl p-5">
+              <h3 className="text-xl font-semibold text-white mb-2">Support paths for login and wallet blocks</h3>
+              <p className="text-gray-300 leading-relaxed">
+                When OTP SMS stalls, IP exceeds limit appears, or a deposit hangs, in-app live chat plus{" "}
+                <a href={`mailto:${SITE.supportEmail}`} className="text-accent hover:underline">
+                  {SITE.supportEmail}
+                </a>{" "}
+                give you a place to send user ID and screenshots. Our troubleshooting blogs cover the same errors with
+                step-by-step fixes.
+              </p>
+            </div>
+          </div>
+
           <div className="relative aspect-[1200/560] max-w-3xl overflow-hidden rounded-xl border border-gray-800">
             <Image
               src={SITE.images.game}
-              alt="Teen Patti Gold key gaming features in the lobby"
+              alt="Teen Patti Gold lobby showing card tables and side games"
               width={1200}
               height={560}
               className="object-cover w-full h-full"
@@ -686,11 +750,135 @@ export default function Home() {
           </div>
         </section>
 
+        <section id="game-modes" className="scroll-mt-24 space-y-6">
+          <h2 className="text-3xl font-bold text-accent">Teen Patti Gold Game Modes and Side Games</h2>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            The Teen Patti Gold lobby is not only classic three-card Flash. Understanding each mode helps you pick
+            tables that match your bankroll and skill instead of jumping into the first high-boot seat you see.
+          </p>
+          <div className="overflow-x-auto rounded-xl border border-gray-800 bg-[#1a140c]/60">
+            <table className="w-full text-left text-sm md:text-base">
+              <caption className="sr-only">Teen Patti Gold game modes overview</caption>
+              <thead className="bg-[#120e0a] text-accent">
+                <tr>
+                  <th scope="col" className="px-4 py-3 font-semibold">
+                    Mode
+                  </th>
+                  <th scope="col" className="px-4 py-3 font-semibold">
+                    What changes
+                  </th>
+                  <th scope="col" className="px-4 py-3 font-semibold">
+                    Best for
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="text-gray-200 divide-y divide-gray-800">
+                <tr>
+                  <th scope="row" className="px-4 py-3 font-medium text-white">
+                    Classic Teen Patti
+                  </th>
+                  <td className="px-4 py-3">Highest three-card hand wins after betting rounds</td>
+                  <td className="px-4 py-3">Beginners learning boot, seen play, and showdown</td>
+                </tr>
+                <tr>
+                  <th scope="row" className="px-4 py-3 font-medium text-white">
+                    Muflis
+                  </th>
+                  <td className="px-4 py-3">Lowest hand ranks best—opposite of Classic</td>
+                  <td className="px-4 py-3">Players who want a slower, more tactical table</td>
+                </tr>
+                <tr>
+                  <th scope="row" className="px-4 py-3 font-medium text-white">
+                    Joker / AK47-style
+                  </th>
+                  <td className="px-4 py-3">Wild cards change hand strength mid-round</td>
+                  <td className="px-4 py-3">Sessions that need more variance and bluff room</td>
+                </tr>
+                <tr>
+                  <th scope="row" className="px-4 py-3 font-medium text-white">
+                    Private rooms
+                  </th>
+                  <td className="px-4 py-3">Invite-only tables with your chosen boot</td>
+                  <td className="px-4 py-3">Friends, family, or practice before public stakes</td>
+                </tr>
+                <tr>
+                  <th scope="row" className="px-4 py-3 font-medium text-white">
+                    Side games
+                  </th>
+                  <td className="px-4 py-3">Short-round titles such as Dragon vs Tiger or Fortune Gems when listed</td>
+                  <td className="px-4 py-3">Clearing bonus wager on eligible short sessions</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            Side-game lists inside the app can change with updates. Always check the live lobby labels and bonus
+            eligibility before you spend chips that still carry wagering conditions. For weekly bonus unlock and fast
+            wager ideas, see our{" "}
+            <Link href="/blog/enable-teen-patti-gold-weekly-bonus" className="text-accent hover:underline">
+              weekly bonus guide
+            </Link>
+            .
+          </p>
+        </section>
+
+        <section id="how-to-play" className="scroll-mt-24 space-y-6">
+          <h2 className="text-3xl font-bold text-accent">How to Play Teen Patti Gold Step by Step</h2>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            If you already know home Flash, the digital table will feel familiar. These steps cover a standard Classic
+            round so first-time Teen Patti Gold users know what each button means before they raise the boot.
+          </p>
+          <ol className="space-y-4">
+            {[
+              {
+                title: "Choose a table",
+                body: "Open the Teen Patti lobby and pick a public Classic table with a boot amount you can afford for at least twenty hands. High-boot seats burn a new balance too quickly.",
+              },
+              {
+                title: "Pay the boot and receive cards",
+                body: "Every player posts the table boot. You receive three cards face down. Decide whether to play blind (without looking) or seen (after viewing your hand).",
+              },
+              {
+                title: "Bet, call, raise, or fold",
+                body: "On your turn, match the current bet, raise when your hand and position justify it, or fold weak holdings early. Blind play costs less per action but reveals less information.",
+              },
+              {
+                title: "Sideshow or showdown",
+                body: "When rules allow, a sideshow compares hands with one opponent. At showdown, remaining players reveal cards and the best Classic ranking (or lowest in Muflis) takes the pot.",
+              },
+              {
+                title: "Manage the next hand",
+                body: "Reset your mindset after each pot. Chasing one loss with an oversized raise is the fastest way to empty a JazzCash top-up you planned to stretch across the evening.",
+              },
+            ].map((step, index) => (
+              <li key={step.title} className="flex gap-4 bg-[#1a140c]/80 border border-gray-800 rounded-xl p-4">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent text-primary font-bold">
+                  {index + 1}
+                </span>
+                <div>
+                  <h3 className="text-lg font-semibold text-white">{step.title}</h3>
+                  <p className="text-gray-300 mt-1">{step.body}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            Hand rankings on Classic tables follow the usual Teen Patti order: trail (three of a kind), pure sequence,
+            sequence, colour, pair, then high card. Confirm the in-app help screen if a variant changes wild-card rules.
+          </p>
+        </section>
+
         <section id="download-install" className="scroll-mt-24 space-y-6">
           <h2 className="text-3xl font-bold text-accent">How to Download and Install Teen Patti Gold APK</h2>
           <p className="text-gray-300 leading-relaxed text-lg">
             Google Play may not always list every regional Teen Patti Gold build. Installing from a trusted APK source
-            is normal in Pakistan—just keep Unknown Sources limited to the browser you trust.
+            is normal in Pakistan—just keep Unknown Sources limited to the browser or file manager you trust, then turn
+            that permission off again after install.
+          </p>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            Current package details on this site: version {SITE.version}, about {SITE.fileSize}, for {SITE.os}. Updated{" "}
+            {SITE.updateDate}. Always prefer the APK served from {SITE.domain} over random Telegram forwards or lookalike
+            domains that clone our branding.
           </p>
           <ol className="space-y-4">
             {INSTALL_STEPS.map((step, index) => (
@@ -711,7 +899,11 @@ export default function Home() {
             <Link href={SITE.routes.download} className="text-accent hover:underline">
               Teen Patti Gold download guide
             </Link>
-            .
+            . PC players should use the{" "}
+            <Link href={SITE.routes.pc} className="text-accent hover:underline">
+              Teen Patti Gold for PC
+            </Link>{" "}
+            emulator walkthrough instead of sideloading blindly.
           </p>
         </section>
 
@@ -723,8 +915,12 @@ export default function Home() {
             easier later.
           </p>
           <p className="text-gray-300 leading-relaxed text-lg">
-            Guest play is fine for a quick look at the lobby, but convert to a full account before any deposit. For
-            forgotten passwords, follow our{" "}
+            Guest play is fine for a quick look at the lobby, but convert to a full account before any deposit. Binding
+            phone and email early protects chips if you change devices or clear app data. Write down your user ID from
+            the profile screen; support teams ask for it on almost every wallet ticket.
+          </p>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            For forgotten passwords, follow our{" "}
             <Link href="/blog/recover-teen-patti-gold-account-password" className="text-accent hover:underline">
               account password recovery guide
             </Link>
@@ -732,7 +928,11 @@ export default function Home() {
             <Link href="/blog/teen-patti-gold-otp-not-received" className="text-accent hover:underline">
               OTP not received fixes
             </Link>
-            .
+            . When the app blocks you with an IP exceeds limit message, use the{" "}
+            <Link href="/blog/fix-teen-patti-gold-ip-exceeds-limit" className="text-accent hover:underline">
+              IP limit troubleshooting steps
+            </Link>{" "}
+            before creating a second account.
           </p>
           <div className="relative aspect-[1200/560] max-w-3xl overflow-hidden rounded-xl border border-gray-800">
             <Image
@@ -755,11 +955,7 @@ export default function Home() {
           </p>
           <p className="text-gray-300 leading-relaxed text-lg">
             Withdrawals usually start from {SITE.minWithdraw}. Complete any KYC or binding steps the app requests
-            before your first cash-out. Typical timing varies by channel—read{" "}
-            <Link href="/blog/teen-patti-gold-deposit-withdraw-time" className="text-accent hover:underline">
-              how long deposits and withdrawals take
-            </Link>
-            , then use the dedicated{" "}
+            before your first cash-out. Typical timing varies by channel—see JazzCash and EasyPaisa notes in the{" "}
             <Link href={SITE.routes.deposit} className="text-accent hover:underline">
               deposit guide
             </Link>{" "}
@@ -841,9 +1037,34 @@ export default function Home() {
         <section id="payment-methods" className="scroll-mt-24 space-y-4">
           <h2 className="text-3xl font-bold text-accent">Payment Methods for Pakistani Players</h2>
           <p className="text-gray-300 leading-relaxed text-lg">
-            JazzCash and EasyPaisa remain the fastest paths for most Teen Patti Gold users. Bank transfers help for
-            larger amounts but can take longer to confirm. Match the account name and number carefully—wrong details
-            are the top cause of delayed credits.
+            JazzCash and EasyPaisa remain the fastest paths for most Teen Patti Gold users in Pakistan. Both wallets
+            support small top-ups near the {SITE.minDeposit} floor and larger recharges when you want a longer session
+            buffer. Confirm the merchant name and amount on the wallet OTP screen before you approve.
+          </p>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            Bank transfers help for bigger amounts but can take longer to confirm, especially outside banking hours.
+            Match the account title and number exactly—wrong details are the top cause of delayed credits. Keep the
+            transfer receipt until the in-app balance updates, then screenshot the wallet history if you need support.
+          </p>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            NayaPay or other rails may appear in Wallet when the operator enables them. Treat every new channel as
+            optional until you have completed one successful small test deposit and seen chips credit. Never send money
+            to a personal JazzCash or EasyPaisa number shared in a chat or on social media claiming to be “Teen Patti
+            Gold support.”
+          </p>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            Withdrawals usually route back to the same JazzCash, EasyPaisa, or bank channel you bound in the profile.
+            Complete any KYC or binding steps before your first cash-out request. Channel lists can change inside the
+            app, so treat Wallet → Recharge / Withdraw as the live source of truth and use our{" "}
+            <Link href={SITE.routes.deposit} className="text-accent hover:underline">
+              deposit
+            </Link>{" "}
+            and{" "}
+            <Link href={SITE.routes.withdraw} className="text-accent hover:underline">
+              withdraw
+            </Link>{" "}
+            guides for the full walkthrough. Timing expectations are covered inside those same deposit and withdraw
+            pages.
           </p>
         </section>
 
@@ -851,7 +1072,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-accent">Teen Patti Gold Troubleshooting</h2>
           <p className="text-gray-300 leading-relaxed text-lg">
             The searches that actually matter after install are rarely “what is Teen Patti.” Players need password
-            recovery, IP limit fixes, OTP delivery, and wallet timing answers. Start here:
+            recovery, IP limit fixes, OTP delivery, and wallet answers. Start here:
           </p>
           <ul className="list-disc list-inside space-y-2 text-gray-300 text-lg">
             <li>
@@ -870,8 +1091,13 @@ export default function Home() {
               </Link>
             </li>
             <li>
-              <Link href="/blog/teen-patti-gold-deposit-withdraw-time" className="text-accent hover:underline">
-                Deposit and withdraw timing
+              <Link href={SITE.routes.deposit} className="text-accent hover:underline">
+                Deposit timing &amp; JazzCash issues
+              </Link>
+            </li>
+            <li>
+              <Link href={SITE.routes.withdraw} className="text-accent hover:underline">
+                Withdraw timing &amp; payout blocks
               </Link>
             </li>
           </ul>
@@ -879,12 +1105,26 @@ export default function Home() {
 
         <section id="tips" className="scroll-mt-24 space-y-4">
           <h2 className="text-3xl font-bold text-accent">Smart Tips for Teen Patti Gold</h2>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            Strategy on Teen Patti Gold is less about “secret systems” and more about bankroll discipline, table
+            selection, and knowing when to fold. These habits help Pakistani players stretch a JazzCash top-up without
+            turning entertainment into stress.
+          </p>
           <ul className="space-y-3 text-gray-300 text-lg list-disc list-inside">
-            <li>Start on low boot tables until you learn opponents’ betting rhythm.</li>
-            <li>Do not chase losses after a bad streak—set a session limit before you open the wallet.</li>
-            <li>Fold weak hands early; Teen Patti rewards patience more than constant calling.</li>
-            <li>Bind recovery email and keep your APK updated from {SITE.domain} only.</li>
+            <li>
+              Start on low-boot Classic tables until you learn opponents’ betting rhythm and how often they sideshow.
+            </li>
+            <li>Set a session limit in PKR before you open Wallet—stop when that limit hits, even on a winning night.</li>
+            <li>Fold weak hands early; Teen Patti rewards patience more than constant calling with middle pairs.</li>
+            <li>Avoid chasing losses after two or three bad pots; switch to a lower table or close the app.</li>
+            <li>Bind recovery email and keep your APK updated from {SITE.domain} only—cloned installers are a common risk.</li>
+            <li>Read bonus wagering text before claiming free chips you cannot withdraw yet.</li>
           </ul>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            Common beginner mistakes include playing every hand, ignoring how often a rival raises, and overusing
+            sideshow when the pot is already large. Watching one full orbit before you raise aggressively teaches more
+            than jumping into every pot.
+          </p>
         </section>
 
         <section id="pros-cons" className="scroll-mt-24 space-y-6">
@@ -914,23 +1154,43 @@ export default function Home() {
         <section id="safety" className="scroll-mt-24 space-y-4">
           <h2 className="text-3xl font-bold text-accent">Safety and Responsible Gaming</h2>
           <p className="text-gray-300 leading-relaxed text-lg">
-            Download Teen Patti Gold only from this site, never share OTPs, and treat the app as entertainment—not a
-            salary replacement. If play stops being fun, take a break and use bank or wallet spending limits.
+            Download Teen Patti Gold only from this site, never share OTPs or passwords, and treat the app as
+            entertainment—not a salary replacement. Real-money tables can create real losses; only stake amounts you
+            can afford to lose without touching rent, bills, or family savings.
+          </p>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            Use bank or wallet spending limits if play stops feeling fun. Take breaks after long evening sessions, and
+            avoid depositing again immediately after a losing streak. Online gaming rules vary by region—check local laws
+            before you play with PKR, and review our{" "}
+            <Link href={SITE.routes.disclaimer} className="text-accent hover:underline">
+              disclaimer
+            </Link>{" "}
+            and{" "}
+            <Link href={SITE.routes.privacy} className="text-accent hover:underline">
+              privacy
+            </Link>{" "}
+            pages for how this guide site handles information.
           </p>
         </section>
 
         <section id="support" className="scroll-mt-24 space-y-4">
           <h2 className="text-3xl font-bold text-accent">Customer Support for Teen Patti Gold</h2>
           <p className="text-gray-300 leading-relaxed text-lg">
-            Use in-app live chat for account locks, missing deposits, or IP errors. You can also email{" "}
+            Use in-app live chat for account locks, missing deposits, OTP failures, or IP errors. Prepare your user ID,
+            registered phone number, device model, Android version, and clear screenshots before you open the ticket—
+            complete details usually get faster replies than a one-line “deposit not received” message.
+          </p>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            You can also email{" "}
             <a href={`mailto:${SITE.supportEmail}`} className="text-accent hover:underline">
               {SITE.supportEmail}
             </a>{" "}
-            with your user ID, device model, and screenshots. Our{" "}
+            with the same package of details. Our{" "}
             <Link href={SITE.routes.contact} className="text-accent hover:underline">
               contact page
             </Link>{" "}
-            lists the same channels.
+            lists the channels we monitor for getteenpattigold.com.pk visitors. For self-serve fixes, start with the
+            troubleshooting links above before waiting on chat.
           </p>
           <div className="relative aspect-[1200/560] max-w-3xl overflow-hidden rounded-xl border border-gray-800">
             <Image
@@ -956,9 +1216,15 @@ export default function Home() {
         <section id="conclusion" className="scroll-mt-24 space-y-4">
           <h2 className="text-3xl font-bold text-accent">Conclusion</h2>
           <p className="text-gray-300 leading-relaxed text-lg">
-            Teen Patti Gold remains one of the strongest branded 3 Patti downloads for Pakistani Android users who want
-            classic tables, local wallets, and clear support paths. Use getteenpattigold.com.pk for the APK, follow the
-            install steps, and keep our troubleshooting blogs bookmarked for password, IP, OTP, and timing issues.
+            Teen Patti Gold remains a strong branded 3 Patti download for Pakistani Android users who want classic
+            tables, JazzCash and EasyPaisa wallet flows, clear game modes, and support paths when OTP or IP issues
+            appear. Use getteenpattigold.com.pk for the APK, follow the install and how-to-play steps, and keep our
+            troubleshooting blogs bookmarked for password, IP, OTP, and timing questions.
+          </p>
+          <p className="text-gray-300 leading-relaxed text-lg">
+            Play for entertainment, stake only what you can afford to lose, and return to the dedicated download,
+            deposit, withdraw, and PC guides whenever you need a focused walkthrough. Ready to install? Tap DOWNLOAD
+            NOW and start on a low-boot Classic table.
           </p>
           <DownloadButton />
         </section>

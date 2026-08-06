@@ -124,7 +124,7 @@ export default function AboutPage() {
             <li>✓ Official APK download steps and version notes ({SITE.version}, updated {SITE.updateDate})</li>
             <li>✓ Deposit &amp; withdraw walkthroughs with {SITE.minDeposit} / {SITE.minWithdraw} thresholds</li>
             <li>✓ PC emulator guides for Windows users who prefer a larger screen</li>
-            <li>✓ Blog articles on OTP delays, IP limits, password recovery, and payout timing</li>
+            <li>✓ Blog articles on OTP delays, IP limits, password recovery, and weekly bonus wagering</li>
             <li>✓ Safety reminders about clone APKs, WhatsApp agent scams, and responsible budgets</li>
           </ul>
         </div>
@@ -133,7 +133,7 @@ export default function AboutPage() {
           <div className="bg-[#1a140c] rounded-xl p-6 border border-gray-800">
             <h2 className="text-xl font-bold text-[#FFA500] mb-3">Editorial Standards</h2>
             <p className="text-gray-300 leading-relaxed">
-              Content is written for readers in Pakistan using plain English (with Urdu terms where helpful). We refresh pages when APK versions or payment flows change. Screenshots use official {SITE.name} assets hosted on {SITE.domain}.
+              Content is written for readers in Pakistan in plain English. We refresh pages when APK versions or payment flows change. Screenshots use official {SITE.name} assets hosted on {SITE.domain}.
             </p>
           </div>
           <div className="bg-[#1a140c] rounded-xl p-6 border border-gray-800">

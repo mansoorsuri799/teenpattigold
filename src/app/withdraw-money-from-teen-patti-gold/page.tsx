@@ -32,6 +32,38 @@ export const metadata: Metadata = {
 };
 
 export default function WithdrawMoneyPage() {
+  const withdrawFaq = [
+    {
+      question: "Teen Patti Gold withdrawal stuck on Pending?",
+      answer:
+        "Wait at least 30–60 minutes. If unchanged, note the order ID and contact in-app support once — avoid hammering duplicate requests.",
+    },
+    {
+      question: "Minimum not met when withdrawing from Teen Patti Gold?",
+      answer: `Your withdrawable balance must reach ${SITE.minWithdraw} after bonus rules. Check the wallet breakdown screen for locked vs available chips.`,
+    },
+    {
+      question: "Teen Patti Gold wallet number rejected?",
+      answer:
+        "Re-bind using the SIM registered on JazzCash or EasyPaisa. Third-party or family member wallets are usually blocked for AML checks.",
+    },
+    {
+      question: "Does the first Teen Patti Gold payout require a deposit?",
+      answer:
+        "Some new accounts need an initial top-up before the first cash-out clears. See the deposit guide for safe funding steps.",
+    },
+    {
+      question: "Why is the JazzCash or EasyPaisa amount less than requested?",
+      answer:
+        "Wallet providers may deduct their own fee on incoming transfers. Compare gross request vs net credit in both apps.",
+    },
+    {
+      question: "How long do Teen Patti Gold withdrawals take?",
+      answer:
+        "Many JazzCash and EasyPaisa payouts complete within minutes to a few hours when queues are clear. Peak evenings, KYC holds, and bank rails can take longer. Timing is never guaranteed.",
+    },
+  ] as const;
+
   const howToSchema = {
     "@context": "https://schema.org",
     "@type": "HowTo",
@@ -43,6 +75,16 @@ export default function WithdrawMoneyPage() {
       { "@type": "HowToStep", position: 3, name: "Enter amount", text: `Request at least ${SITE.minWithdraw} if balance allows.` },
       { "@type": "HowToStep", position: 4, name: "Submit & wait", text: "Confirm OTP if asked and monitor wallet for incoming transfer." },
     ],
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: withdrawFaq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
   };
 
   const breadcrumbSchema = {
@@ -57,6 +99,7 @@ export default function WithdrawMoneyPage() {
   return (
     <article>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 pt-6">
@@ -165,6 +208,25 @@ export default function WithdrawMoneyPage() {
       </section>
 
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+        <div className="max-w-4xl mx-auto bg-[#1A140C] rounded-2xl p-8 md:p-10 border border-gray-800">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#FFA500] mb-4">How Long Withdrawals Usually Take</h2>
+          <p className="text-gray-300 leading-relaxed mb-4">
+            When your account is verified and the withdrawable balance clears bonus rules, JazzCash and EasyPaisa
+            payouts often land within minutes to a few hours. Bank destinations and peak evening queues can take longer.
+            A previous fast cash-out does not lock in the same timing for the next request.
+          </p>
+          <p className="text-gray-300 leading-relaxed">
+            Pending status for under an hour is common. After that, use the order ID once with support instead of
+            stacking duplicate requests. Deposit timing and funding steps stay on the{" "}
+            <Link href={SITE.routes.deposit} className="text-[#0ea5e9] hover:underline">
+              deposit guide
+            </Link>
+            .
+          </p>
+        </div>
+      </section>
+
+      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-center text-[#FFA500] mb-8">Processing Tips</h2>
           <ul className="space-y-4">
@@ -189,31 +251,10 @@ export default function WithdrawMoneyPage() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-center text-white mb-8">Troubleshooting</h2>
           <div className="space-y-6">
-            {[
-              {
-                q: "Withdrawal stuck on Pending",
-                a: "Wait at least 30–60 minutes. If unchanged, note the order ID and contact in-app support once — avoid hammering duplicate requests.",
-              },
-              {
-                q: "Minimum not met error",
-                a: `Your withdrawable balance must reach ${SITE.minWithdraw} after bonus rules. Check the wallet breakdown screen for locked vs available chips.`,
-              },
-              {
-                q: "Wallet number rejected",
-                a: "Re-bind using the SIM registered on JazzCash/EasyPaisa. Third-party or family member wallets are usually blocked for AML checks.",
-              },
-              {
-                q: "First payout requires deposit?",
-                a: "Some new accounts need an initial top-up before the first cash-out clears. See our deposit guide for safe funding steps.",
-              },
-              {
-                q: "Amount received is less than requested",
-                a: "Wallet providers may deduct their own fee on incoming transfers. Compare gross request vs net credit in both apps.",
-              },
-            ].map((item) => (
-              <div key={item.q} className="bg-[#1A140C] rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-[#FFC107] mb-2">{item.q}</h3>
-                <p className="text-gray-300">{item.a}</p>
+            {withdrawFaq.map((item) => (
+              <div key={item.question} className="bg-[#1A140C] rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-[#FFC107] mb-2">{item.question}</h3>
+                <p className="text-gray-300">{item.answer}</p>
               </div>
             ))}
           </div>
@@ -228,8 +269,8 @@ export default function WithdrawMoneyPage() {
           <Link href={SITE.routes.download} className="text-[#0ea5e9] hover:text-[#FFA500] font-semibold">
             Download APK →
           </Link>
-          <Link href={`${SITE.routes.blog}/teen-patti-gold-deposit-withdraw-time`} className="text-[#0ea5e9] hover:text-[#FFA500] font-semibold">
-            Deposit &amp; Withdraw Timing →
+          <Link href={SITE.routes.blog} className="text-[#0ea5e9] hover:text-[#FFA500] font-semibold">
+            Support Blog →
           </Link>
         </div>
       </section>

@@ -91,8 +91,41 @@ export default function DownloadPage() {
       name: SITE.developer,
       url: SITE.origin,
     },
-    inLanguage: ["en", "ur"],
+    inLanguage: "en",
     countriesSupported: "PK",
+  };
+
+  const installFaq = [
+    {
+      question: "Parse error or package invalid when installing Teen Patti Gold?",
+      answer:
+        "Re-download the APK from this page. Corrupted files usually come from interrupted connections or unofficial mirrors.",
+    },
+    {
+      question: "App not installed — conflicting package on Teen Patti Gold?",
+      answer:
+        "Uninstall any older Teen Patti Gold build first, then install the fresh APK. Do not stack modded versions.",
+    },
+    {
+      question: "OTP not arriving after Teen Patti Gold install?",
+      answer:
+        "Wait 60 seconds, toggle airplane mode, and retry. See the Teen Patti Gold OTP not received guide on this site for deeper fixes.",
+    },
+    {
+      question: "Can I play Teen Patti Gold on a laptop?",
+      answer:
+        "Yes — use an Android emulator. Full steps are on the Teen Patti Gold for PC guide on this site.",
+    },
+  ] as const;
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: installFaq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
   };
 
   const howToSchema = {
@@ -141,6 +174,7 @@ export default function DownloadPage() {
     <article>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 pt-6">
@@ -344,29 +378,50 @@ export default function DownloadPage() {
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold mb-8 text-[#FFA500] text-center">Install Troubleshooting</h2>
         <div className="max-w-4xl mx-auto space-y-4">
-          {[
-            {
-              q: "Parse error or package invalid",
-              a: "Re-download from this page. Corrupted downloads often come from interrupted connections or mirror sites.",
-            },
-            {
-              q: "App not installed — conflicting package",
-              a: "Uninstall any older Teen Patti Gold build first, then install the fresh APK. Do not stack modded versions.",
-            },
-            {
-              q: "OTP not arriving",
-              a: "Wait 60 seconds, toggle airplane mode, and retry. See our blog post on OTP delays for deeper fixes.",
-            },
-            {
-              q: "Play on laptop instead?",
-              a: "Use an Android emulator — full steps on our PC guide.",
-            },
-          ].map((item) => (
-            <div key={item.q} className="bg-[#1A140C] rounded-xl p-6">
-              <h3 className="text-lg font-semibold text-[#FFC107] mb-2">{item.q}</h3>
-              <p className="text-gray-300">{item.a}</p>
+          {installFaq.map((item) => (
+            <div key={item.question} className="bg-[#1A140C] rounded-xl p-6">
+              <h3 className="text-lg font-semibold text-[#FFC107] mb-2">{item.question}</h3>
+              <p className="text-gray-300">
+                {item.answer}{" "}
+                {item.question.includes("OTP") && (
+                  <Link href="/blog/teen-patti-gold-otp-not-received" className="text-[#0ea5e9] hover:underline">
+                    Open OTP guide →
+                  </Link>
+                )}
+                {item.question.includes("laptop") && (
+                  <Link href={SITE.routes.pc} className="text-[#0ea5e9] hover:underline">
+                    Open PC guide →
+                  </Link>
+                )}
+              </p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+        <div className="bg-[#1a140c] rounded-xl p-8 md:p-10 max-w-4xl mx-auto border border-gray-800">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#FFA500]">After You Install</h2>
+          <p className="text-gray-300 leading-relaxed mb-4">
+            Convert guest play to a full mobile login before any deposit, then bind email in Profile. When you are ready
+            to add PKR, follow the{" "}
+            <Link href={SITE.routes.deposit} className="text-[#0ea5e9] hover:underline">
+              deposit guide
+            </Link>
+            . For cash-outs later, use the{" "}
+            <Link href={SITE.routes.withdraw} className="text-[#0ea5e9] hover:underline">
+              withdraw guide
+            </Link>
+            . Password, IP, and OTP issues belong on our{" "}
+            <Link href={SITE.routes.blog} className="text-[#0ea5e9] hover:underline">
+              support blog
+            </Link>
+            .
+          </p>
+          <p className="text-gray-300 leading-relaxed">
+            Keep Unknown Sources disabled for apps you do not trust after the APK installs. Update Teen Patti Gold from
+            this site when a new version ships — do not trust random “update” APK links from chat groups.
+          </p>
         </div>
       </section>
 

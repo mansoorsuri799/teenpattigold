@@ -82,7 +82,12 @@ const nextConfig = {
       },
       {
         source: '/blog/teen-patti-loot-bonuses-vip-guide',
-        destination: '/blog/teen-patti-gold-deposit-withdraw-time',
+        destination: '/blog/enable-teen-patti-gold-weekly-bonus',
+        permanent: true,
+      },
+      {
+        source: '/blog/teen-patti-gold-deposit-withdraw-time',
+        destination: '/deposit-money-in-teen-patti-gold',
         permanent: true,
       },
       {

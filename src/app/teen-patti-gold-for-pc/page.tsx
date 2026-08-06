@@ -70,6 +70,39 @@ export default function PcPage() {
     ],
   };
 
+  const pcFaq = [
+    {
+      question: "Is there a native Teen Patti Gold Windows installer?",
+      answer:
+        "No. Teen Patti Gold ships as an Android APK. On PC you install an Android emulator, then sideload the same APK used on phones.",
+    },
+    {
+      question: "Which emulator is best for Teen Patti Gold in Pakistan?",
+      answer:
+        "BlueStacks is easiest for beginners, LDPlayer is lighter on mid-range laptops, and GameLoop is a solid alternative. Choose based on your RAM and which official installer you trust.",
+    },
+    {
+      question: "Can I deposit with JazzCash from the PC emulator?",
+      answer:
+        "Approvals still happen on your physical phone JazzCash or EasyPaisa app. The emulator runs the game; mobile wallets complete merchant OTPs and PINs.",
+    },
+    {
+      question: "Teen Patti Gold crashes or shows a black screen on PC?",
+      answer:
+        "Switch emulator graphics between OpenGL and DirectX, update GPU drivers, allocate more RAM, and reinstall a clean APK from this site — not a mod pack.",
+    },
+  ] as const;
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: pcFaq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  };
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -83,6 +116,7 @@ export default function PcPage() {
     <article>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 pt-6">
@@ -278,9 +312,27 @@ export default function PcPage() {
         </p>
       </section>
 
-      <section className="py-8 px-4 text-center">
+      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-[#FFA500] text-center">PC Setup FAQs</h2>
+        <div className="max-w-4xl mx-auto space-y-4">
+          {pcFaq.map((item) => (
+            <div key={item.question} className="bg-[#1A140C] rounded-xl p-6 border border-gray-800">
+              <h3 className="text-lg font-semibold text-[#FFC107] mb-2">{item.question}</h3>
+              <p className="text-gray-300">{item.answer}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="py-8 px-4 text-center flex flex-wrap justify-center gap-6">
         <Link href={SITE.routes.download} className="text-[#0ea5e9] hover:text-[#FFA500] font-semibold">
-          ← Back to Android Download
+          ← Android Download
+        </Link>
+        <Link href={SITE.routes.deposit} className="text-[#0ea5e9] hover:text-[#FFA500] font-semibold">
+          Deposit Guide →
+        </Link>
+        <Link href={SITE.routes.home} className="text-[#0ea5e9] hover:text-[#FFA500] font-semibold">
+          Home →
         </Link>
       </section>
     </article>

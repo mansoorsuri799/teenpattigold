@@ -14,7 +14,7 @@ export type SitemapPage = {
   images?: SitemapImage[];
 };
 
-const LASTMOD = "2026-07-29";
+const LASTMOD = "2026-08-06";
 
 export const SITE_PAGES: SitemapPage[] = [
   {
