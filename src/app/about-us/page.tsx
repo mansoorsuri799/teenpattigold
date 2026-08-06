@@ -133,7 +133,7 @@ export default function AboutPage() {
           <div className="bg-[#1a140c] rounded-xl p-6 border border-gray-800">
             <h2 className="text-xl font-bold text-[#FFA500] mb-3">Editorial Standards</h2>
             <p className="text-gray-300 leading-relaxed">
-              Content is written for readers in Pakistan in plain English. We refresh pages when APK versions or payment flows change. Screenshots use official {SITE.name} assets hosted on {SITE.domain}.
+              Content is written for readers in Pakistan in plain English. The Teen Patti Gold app itself supports English, Urdu, and Hindi in the client UI. We refresh pages when APK versions or payment flows change. Screenshots use official {SITE.name} assets hosted on {SITE.domain}.
             </p>
           </div>
           <div className="bg-[#1a140c] rounded-xl p-6 border border-gray-800">

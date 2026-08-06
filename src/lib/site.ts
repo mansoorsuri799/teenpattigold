@@ -20,8 +20,8 @@ export const SITE = {
   currency: "PKR",
   minDeposit: "100 PKR",
   minWithdraw: "100 PKR",
-  /** Guide site language only — do not claim Urdu/Hindi pages we do not publish */
-  languages: "English",
+  /** App UI languages (Teen Patti Gold supports these in-app) */
+  languages: "English, Urdu, Hindi",
   category: "Cards, Game",
   developer: "Teen Patti Gold",
   facebookUrl: "",

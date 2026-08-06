@@ -91,7 +91,7 @@ export default function DownloadPage() {
       name: SITE.developer,
       url: SITE.origin,
     },
-    inLanguage: "en",
+    inLanguage: ["en", "ur", "hi"],
     countriesSupported: "PK",
   };
 

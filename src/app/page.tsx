@@ -342,6 +342,7 @@ export default function Home() {
         name: SITE.name,
         operatingSystem: SITE.os,
         applicationCategory: "GameApplication",
+        inLanguage: ["en", "ur", "hi"],
         image: heroImageUrl,
         logo: logoImageUrl,
         aggregateRating: {
