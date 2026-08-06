@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import BlogPostSchema from "@/components/BlogPostSchema";
 import { SITE } from "@/lib/site";
+import DownloadButton from "@/components/DownloadButton";
 
 const slug = "enable-teen-patti-gold-weekly-bonus";
 const title = "How to Enable Teen Patti Gold Weekly Bonus & Clear Wager Fast";
@@ -105,23 +106,6 @@ export const metadata: Metadata = {
   },
 };
 
-function DownloadButton({ className = "" }: { className?: string }) {
-  return (
-    <a
-      href={SITE.downloadUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={`relative inline-flex items-center px-10 py-5 text-white font-bold text-lg rounded-full border-2 border-[#0ea5e9] hover:bg-[#0ea5e9]/10 transition-all group shadow-2xl ${className}`}
-    >
-      <span className="mr-4">DOWNLOAD NOW</span>
-      <div className="bg-[#f97316] rounded-full p-3 group-hover:scale-110 transition-transform">
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-        </svg>
-      </div>
-    </a>
-  );
-}
 
 export default function WeeklyBonusGuidePage() {
   return (

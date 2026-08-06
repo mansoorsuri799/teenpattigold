@@ -25,8 +25,8 @@ export const SITE_PAGES: SitemapPage[] = [
     images: [
       {
         loc: SITE.images.hero,
-        title: `${SITE.name} - Official App Icon`,
-        caption: `${SITE.name} APK for Android in Pakistan. Play Teen Patti with JazzCash and EasyPaisa support.`,
+        title: SITE.images.appIconAlt,
+        caption: SITE.images.appIconAlt,
       },
       {
         loc: SITE.images.game,
@@ -73,8 +73,8 @@ export const SITE_PAGES: SitemapPage[] = [
     images: [
       {
         loc: SITE.images.hero,
-        title: `Download ${SITE.name}`,
-        caption: `Download ${SITE.name} APK for Android`,
+        title: SITE.images.appIconAlt,
+        caption: `Download ${SITE.name} APK for Android — official 3 Patti Gold game icon Pakistan 2026`,
       },
     ],
   },
@@ -112,8 +112,8 @@ export const SITE_PAGES: SitemapPage[] = [
     images: [
       {
         loc: SITE.images.hero,
-        title: `${SITE.name} for PC`,
-        caption: `Play ${SITE.name} on PC with an Android emulator`,
+        title: SITE.images.appIconAlt,
+        caption: `Play ${SITE.name} on PC with an Android emulator — 3 Patti Gold APK icon`,
       },
     ],
   },
@@ -125,8 +125,8 @@ export const SITE_PAGES: SitemapPage[] = [
     images: [
       {
         loc: SITE.images.hero,
-        title: `About ${SITE.name}`,
-        caption: `About the ${SITE.name} guide site for Pakistan`,
+        title: SITE.images.appIconAlt,
+        caption: `About ${SITE.name} — official 3 Patti Gold app icon for Pakistan`,
       },
     ],
   },

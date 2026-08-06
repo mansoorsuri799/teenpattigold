@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { SITE } from "@/lib/site";
+import DownloadButton from "@/components/DownloadButton";
 
 const canonical = `${SITE.origin}${SITE.routes.deposit}`;
 
@@ -129,24 +130,7 @@ export default function DepositMoneyPage() {
             through each payment channel used by Pakistani players. Deposits are optional — never add more than you are
             comfortable losing.
           </p>
-          <a
-            href={SITE.downloadUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center px-8 py-4 rounded-full font-bold text-white border-2 border-[#0ea5e9] hover:bg-[#0ea5e9]/10 transition-all"
-          >
-            <span className="mr-3">DOWNLOAD NOW</span>
-            <span className="bg-[#f97316] rounded-full p-2">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-                />
-              </svg>
-            </span>
-          </a>
+          <DownloadButton />
           <div className="mt-10 flex justify-center">
             <Image
               src={SITE.images.deposit}

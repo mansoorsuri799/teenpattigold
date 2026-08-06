@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { SITE } from "@/lib/site";
+import DownloadButton from "@/components/DownloadButton";
 
 const canonical = `${SITE.origin}${SITE.routes.download}`;
 
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
         url: `${SITE.origin}${SITE.images.logo}`,
         width: 512,
         height: 512,
-        alt: "Download Teen Patti Gold APK for Android",
+        alt: SITE.images.appIconAlt,
       },
     ],
   },
@@ -42,24 +43,6 @@ export const metadata: Metadata = {
     images: [`${SITE.origin}${SITE.images.hero}`],
   },
 };
-
-function DownloadButton({ className = "" }: { className?: string }) {
-  return (
-    <a
-      href={SITE.downloadUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={`relative inline-flex items-center px-10 py-5 text-white font-bold text-lg rounded-full border-2 border-[#0ea5e9] hover:bg-[#0ea5e9]/10 transition-all group shadow-2xl ${className}`}
-    >
-      <span className="mr-4">DOWNLOAD NOW</span>
-      <div className="bg-[#f97316] rounded-full p-3 group-hover:scale-110 transition-transform">
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-        </svg>
-      </div>
-    </a>
-  );
-}
 
 export default function DownloadPage() {
   const softwareSchema = {
@@ -219,8 +202,8 @@ export default function DownloadPage() {
         <div className="flex justify-center mb-10">
           <Image
             src={SITE.images.hero}
-            alt={`${SITE.name} APK download — Teen Patti and card games for Android in Pakistan`}
-            title={`Download ${SITE.name} APK ${SITE.version}`}
+            alt={SITE.images.appIconAlt}
+            title={SITE.images.appIconAlt}
             width={320}
             height={320}
             className="object-contain drop-shadow-2xl w-[260px] h-[260px] md:w-[320px] md:h-[320px]"

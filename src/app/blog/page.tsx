@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Metadata } from "next";
 import { SITE } from "@/lib/site";
+import DownloadButton from "@/components/DownloadButton";
 
 const canonical = `${SITE.origin}${SITE.routes.blog}`;
 
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
         url: `${SITE.origin}${SITE.images.logo}`,
         width: 512,
         height: 512,
-        alt: "Teen Patti Gold Blog",
+        alt: SITE.images.appIconAlt,
       },
     ],
   },
@@ -141,19 +142,7 @@ export default function BlogIndexPage() {
             <Link href={SITE.routes.deposit} className="text-[#0ea5e9] hover:underline">deposit</Link> and{" "}
             <Link href={SITE.routes.withdraw} className="text-[#0ea5e9] hover:underline">withdraw</Link> guides when you are ready to use JazzCash or EasyPaisa.
           </p>
-          <a
-            href={SITE.downloadUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center px-10 py-5 text-white font-bold text-lg rounded-full border-2 border-[#0ea5e9] hover:bg-[#0ea5e9]/10 transition-all group shadow-2xl"
-          >
-            <span className="mr-4">DOWNLOAD NOW</span>
-            <span className="bg-[#f97316] rounded-full p-3 group-hover:scale-110 transition-transform">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </span>
-          </a>
+          <DownloadButton />
         </div>
       </div>
     </div>

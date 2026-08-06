@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { SITE } from "@/lib/site";
+import DownloadButton from "@/components/DownloadButton";
 
 const canonical = `${SITE.origin}${SITE.routes.pc}`;
 
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     url: canonical,
     siteName: SITE.name,
     type: "article",
-    images: [{ url: `${SITE.origin}${SITE.images.hero}`, alt: "Teen Patti Gold on PC" }],
+    images: [{ url: `${SITE.origin}${SITE.images.hero}`, alt: SITE.images.appIconAlt }],
   },
   twitter: {
     card: "summary_large_image",
@@ -152,27 +153,15 @@ export default function PcPage() {
         <div className="flex justify-center mb-10">
           <Image
             src={SITE.images.hero}
-            alt="Teen Patti Gold on PC via Android emulator"
-            title={`${SITE.name} for PC`}
+            alt={SITE.images.appIconAlt}
+            title={`${SITE.name} for PC — ${SITE.images.appIconAlt}`}
             width={320}
             height={320}
             className="object-contain drop-shadow-2xl"
             priority
           />
         </div>
-        <a
-          href={SITE.downloadUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center px-10 py-5 text-white font-bold rounded-full border-2 border-[#0ea5e9] hover:bg-[#0ea5e9]/10 transition-all group"
-        >
-          <span className="mr-4">DOWNLOAD NOW</span>
-          <span className="bg-[#f97316] rounded-full p-3 group-hover:scale-110 transition-transform">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-          </span>
-        </a>
+        <DownloadButton />
       </section>
 
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">

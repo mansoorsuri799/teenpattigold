@@ -89,8 +89,8 @@ export default function AboutPage() {
               <div className="relative w-[280px] h-[280px] rounded-lg overflow-hidden bg-[#1a140c]">
                 <Image
                   src={SITE.images.hero}
-                  alt={`${SITE.name} — Pakistan card gaming guides`}
-                  title={`About ${SITE.name}`}
+                  alt={SITE.images.appIconAlt}
+                  title={SITE.images.appIconAlt}
                   width={320}
                   height={320}
                   className="object-contain p-4 w-full h-full"

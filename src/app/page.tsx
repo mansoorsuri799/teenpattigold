@@ -4,6 +4,7 @@ import Script from "next/script";
 import { Metadata } from "next";
 import { SITE } from "@/lib/site";
 import { imageObjectLicensing } from "@/lib/schemaImageLicensing";
+import DownloadButton from "@/components/DownloadButton";
 
 const PAGE_TITLE = "Teen Patti Gold Pakistan v1.660 Download Official APK";
 const META_DESCRIPTION =
@@ -48,19 +49,19 @@ export const metadata: Metadata = {
         url: heroImageUrl,
         width: 512,
         height: 512,
-        alt: `${SITE.name} – Official APK for Android in Pakistan`,
+        alt: SITE.images.appIconAlt,
       },
       {
         url: ogImageUrl,
         width: 512,
         height: 512,
-        alt: `${SITE.name} – Download APK Pakistan 2026`,
+        alt: SITE.images.appIconAlt,
       },
       {
         url: ogSquareUrl,
         width: 512,
         height: 512,
-        alt: `${SITE.name} – 3 Patti Gold card game app`,
+        alt: "Teen Patti Gold — 3 Patti Gold APK card game app Pakistan",
       },
     ],
   },
@@ -170,36 +171,6 @@ const INSTALL_STEPS = [
   },
 ] as const;
 
-function DownloadButton({ className = "" }: { className?: string }) {
-  return (
-    <a
-      href={SITE.downloadUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={`relative inline-flex items-center px-8 py-4 text-white font-semibold text-lg rounded-full border-2 border-[#0ea5e9] hover:bg-[#0ea5e9]/10 transition-all group ${className}`}
-    >
-      <span>DOWNLOAD NOW</span>
-      <div className="ml-3 bg-[#f97316] rounded-full p-2 group-hover:scale-110 transition-transform">
-        <svg
-          className="w-5 h-5"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-          />
-        </svg>
-      </div>
-    </a>
-  );
-}
-
 function StarRating() {
   const starPath =
     "M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z";
@@ -287,8 +258,8 @@ export default function Home() {
           url: heroImageUrl,
           width: 512,
           height: 512,
-          name: SITE.name,
-          description: `${SITE.name} official brand image for Android APK download in Pakistan.`,
+          name: SITE.images.appIconAlt,
+          description: SITE.images.appIconAlt,
           ...imageObjectLicensing,
         },
         speakable: {
@@ -309,8 +280,8 @@ export default function Home() {
         "@id": `${heroImageUrl}#primary`,
         url: heroImageUrl,
         contentUrl: heroImageUrl,
-        name: SITE.name,
-        description: `${SITE.name} – 3 Patti Gold card game APK for Pakistani Android players.`,
+        name: SITE.images.appIconAlt,
+        description: SITE.images.appIconAlt,
         width: 512,
         height: 512,
         ...imageObjectLicensing,
@@ -492,7 +463,8 @@ export default function Home() {
             <div className="relative w-64 h-64 md:w-80 md:h-80">
               <Image
                 src={SITE.images.hero}
-                alt="Teen Patti Gold official app icon"
+                alt={SITE.images.appIconAlt}
+                title={SITE.images.appIconAlt}
                 width={512}
                 height={512}
                 priority

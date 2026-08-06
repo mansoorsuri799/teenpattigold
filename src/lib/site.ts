@@ -41,6 +41,14 @@ export const SITE = {
     /** 512×512 app icon / brand mark */
     logo: "/teen-patti-gold.webp",
     hero: "/teen-patti-gold.webp",
+    /**
+     * Primary Image SEO alt for teen-patti-gold.webp (homepage LCP + download hero).
+     * Keyword-led for “Teen Patti Gold” image search, still describes the app icon.
+     */
+    appIconAlt:
+      "Teen Patti Gold APK Download — 3 Patti Gold Game Icon Pakistan 2026",
+    /** Shorter mark for header/nav chrome */
+    logoAlt: "Teen Patti Gold — 3 Patti Gold Official App Icon",
     /** 1200×560 screenshots */
     game: "/teen-patti-gold-games.webp",
     games: "/teen-patti-gold-games.webp",

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { SITE } from '@/lib/site';
+import DownloadButton from '@/components/DownloadButton';
 
 export default function Footer() {
   return (
@@ -95,14 +96,7 @@ export default function Footer() {
             <p className="text-sm text-gray-300 mb-4">
               Get the latest {SITE.name} APK ({SITE.version}, {SITE.fileSize}) for Android in Pakistan.
             </p>
-            <a
-              href={SITE.downloadUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 text-white font-semibold rounded-full border-2 border-[#0ea5e9] hover:bg-[#0ea5e9]/10 transition-all"
-            >
-              DOWNLOAD NOW
-            </a>
+            <DownloadButton />
             <p className="text-xs text-gray-500 mt-4">
               Contact:{" "}
               <a href={`mailto:${SITE.supportEmail}`} className="text-accent hover:underline">
