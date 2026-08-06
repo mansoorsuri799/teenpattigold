@@ -31,7 +31,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.origin),
   title: {
-    default: "Teen Patti Gold Game Download APK - Pakistani Earning",
+    default: "Teen Patti Gold Pakistan v1.660 Download Official APK",
     template: `%s | ${SITE.name}`,
   },
   description:
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     canonical: SITE.origin,
   },
   openGraph: {
-    title: "Teen Patti Gold Game Download APK - Pakistani Earning",
+    title: "Teen Patti Gold Pakistan v1.660 Download Official APK",
     description:
       "Download Teen Patti Gold APK for Android in Pakistan. JazzCash & EasyPaisa tips, bonuses, and safe install steps.",
     url: SITE.origin,
@@ -99,7 +99,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Teen Patti Gold Game Download APK - Pakistani Earning",
+    title: "Teen Patti Gold Pakistan v1.660 Download Official APK",
     description:
       "Download Teen Patti Gold APK for Android in Pakistan. JazzCash & EasyPaisa tips, bonuses, and safe install steps.",
     images: [

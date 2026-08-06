@@ -8,7 +8,7 @@ export const SITE = {
   /** Replace with your live APK / affiliate download URL when ready */
   downloadUrl:
     "https://getteenpattigold.com.pk/download-teen-patti-gold",
-  version: "V1.657",
+  version: "V1.660",
   fileSize: "54MB",
   os: "Android 5.0+",
   updateDate: "29-July-2026",

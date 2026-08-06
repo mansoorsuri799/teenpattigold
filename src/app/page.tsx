@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import { SITE } from "@/lib/site";
 import { imageObjectLicensing } from "@/lib/schemaImageLicensing";
 
-const PAGE_TITLE = "Teen Patti Gold Game Download APK - Pakistani Earning";
+const PAGE_TITLE = "Teen Patti Gold Pakistan v1.660 Download Official APK";
 const META_DESCRIPTION =
   "Teen Patti Gold is a popular online card game that allows you to enjoy a wide variety of games with its smooth graphics and fast gameplay. Download APK for Pakistan.";
 
