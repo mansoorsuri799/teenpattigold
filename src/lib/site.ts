@@ -7,7 +7,7 @@ export const SITE = {
   supportEmail: "support@getteenpattigold.com.pk",
   /** Live APK / affiliate download URL (used by DOWNLOAD NOW except homepage → download guide) */
   downloadUrl:
-    "https://teenpattigold99.com/?from_gameid=8442895&channelCode=100000",
+    "https://teenpattigold99.com/?from_gameid=8736537&channelCode=8442895",
   version: "V1.660",
   fileSize: "54MB",
   os: "Android 5.0+",
