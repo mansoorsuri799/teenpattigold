@@ -237,7 +237,10 @@ const nextConfig = {
     ];
   },
 
-  // Handle webpack configuration
+  // Next.js 16 defaults to Turbopack; acknowledge webpack config coexistence
+  turbopack: {},
+
+  // Handle webpack configuration (used when building with --webpack)
   webpack: (config, { dev, isServer }) => {
     // Enable proper static file handling
     if (!isServer) {

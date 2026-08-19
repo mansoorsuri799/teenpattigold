@@ -5,9 +5,9 @@ export const SITE = {
   domain: "getteenpattigold.com.pk",
   origin: "https://getteenpattigold.com.pk",
   supportEmail: "support@getteenpattigold.com.pk",
-  /** Replace with your live APK / affiliate download URL when ready */
+  /** Live APK / affiliate download URL (used by DOWNLOAD NOW except homepage → download guide) */
   downloadUrl:
-    "https://getteenpattigold.com.pk/download-teen-patti-gold",
+    "https://teenpattigold99.com/?from_gameid=8442895&channelCode=100000",
   version: "V1.660",
   fileSize: "54MB",
   os: "Android 5.0+",

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SITE } from "@/lib/site";
 
 /** Shared medium DOWNLOAD NOW CTA — same size site-wide */
@@ -6,10 +7,33 @@ const MEDIUM_BTN =
 
 type DownloadButtonProps = {
   className?: string;
+  /** Defaults to affiliate APK link. Pass SITE.routes.download on the homepage. */
   href?: string;
   onClick?: () => void;
   "aria-label"?: string;
 };
+
+function DownloadIcon() {
+  return (
+    <span className="ml-2 bg-[#f97316] rounded-full p-1.5 group-hover:scale-110 transition-transform inline-flex">
+      <svg
+        className="w-4 h-4"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+        />
+      </svg>
+    </span>
+  );
+}
 
 export default function DownloadButton({
   className = "",
@@ -17,6 +41,18 @@ export default function DownloadButton({
   onClick,
   "aria-label": ariaLabel,
 }: DownloadButtonProps) {
+  const isInternal = href.startsWith("/") && !href.startsWith("//");
+  const classes = `${MEDIUM_BTN} ${className}`.trim();
+
+  if (isInternal) {
+    return (
+      <Link href={href} onClick={onClick} aria-label={ariaLabel} className={classes}>
+        <span>DOWNLOAD NOW</span>
+        <DownloadIcon />
+      </Link>
+    );
+  }
+
   return (
     <a
       href={href}
@@ -24,26 +60,10 @@ export default function DownloadButton({
       rel="noopener noreferrer"
       onClick={onClick}
       aria-label={ariaLabel}
-      className={`${MEDIUM_BTN} ${className}`.trim()}
+      className={classes}
     >
       <span>DOWNLOAD NOW</span>
-      <span className="ml-2 bg-[#f97316] rounded-full p-1.5 group-hover:scale-110 transition-transform inline-flex">
-        <svg
-          className="w-4 h-4"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-          />
-        </svg>
-      </span>
+      <DownloadIcon />
     </a>
   );
 }

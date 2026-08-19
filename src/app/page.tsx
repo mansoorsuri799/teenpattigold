@@ -433,7 +433,7 @@ export default function Home() {
             <StarRating />
 
             <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
-              <DownloadButton />
+              <DownloadButton href={SITE.routes.download} />
               <Link
                 href={SITE.routes.download}
                 className="text-accent underline underline-offset-4 hover:text-white transition-colors font-medium"
@@ -866,7 +866,7 @@ export default function Home() {
               </li>
             ))}
           </ol>
-          <DownloadButton />
+          <DownloadButton href={SITE.routes.download} />
           <p className="text-gray-400 text-sm">
             Need more detail? Read the full{" "}
             <Link href={SITE.routes.download} className="text-accent hover:underline">
@@ -1199,7 +1199,7 @@ export default function Home() {
             deposit, withdraw, and PC guides whenever you need a focused walkthrough. Ready to install? Tap DOWNLOAD
             NOW and start on a low-boot Classic table.
           </p>
-          <DownloadButton />
+          <DownloadButton href={SITE.routes.download} />
         </section>
       </article>
     </>
