@@ -7,7 +7,7 @@ const MEDIUM_BTN =
 
 type DownloadButtonProps = {
   className?: string;
-  /** Defaults to affiliate APK link. Pass SITE.routes.download on the homepage. */
+  /** Defaults to the APK link. Pass SITE.routes.home on the download page. */
   href?: string;
   onClick?: () => void;
   "aria-label"?: string;

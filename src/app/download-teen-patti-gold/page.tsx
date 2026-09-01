@@ -196,7 +196,7 @@ export default function DownloadPage() {
             <span className="text-gray-400">({SITE.ratingCountLabel} ratings · {SITE.downloadsLabel} installs)</span>
           </div>
 
-          <DownloadButton />
+          <DownloadButton href={SITE.routes.home} />
         </div>
 
         <div className="flex justify-center mb-10">
@@ -253,7 +253,7 @@ export default function DownloadPage() {
           </table>
         </div>
         <div className="flex justify-center mt-8">
-          <DownloadButton />
+          <DownloadButton href={SITE.routes.home} />
         </div>
       </section>
 
@@ -418,7 +418,7 @@ export default function DownloadPage() {
           <Link href={SITE.routes.blog} className="text-[#0ea5e9] hover:text-[#FFA500] font-medium transition-colors">Blog</Link>
         </div>
         <div className="flex justify-center mt-10">
-          <DownloadButton />
+          <DownloadButton href={SITE.routes.home} />
         </div>
       </section>
     </article>

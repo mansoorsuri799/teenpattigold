@@ -188,16 +188,6 @@ const nextConfig = {
           },
         ],
       },
-      // Immutable cache only for fingerprinted static assets
-      {
-        source: '/_next/static/:path*',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
-          },
-        ],
-      },
       // Public images: long cache but allow revalidation
       {
         source: '/:path*.webp',
