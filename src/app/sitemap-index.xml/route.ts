@@ -6,11 +6,11 @@ export function GET() {
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>${escapeXml(absoluteUrl("/index.xml"))}</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-10-09</lastmod>
   </sitemap>
   <sitemap>
     <loc>${escapeXml(absoluteUrl("/image-sitemap.xml"))}</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-10-09</lastmod>
   </sitemap>
 </sitemapindex>`;
 

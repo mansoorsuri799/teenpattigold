@@ -8,7 +8,7 @@ const canonical = `${SITE.origin}${SITE.routes.blog}`;
 export const metadata: Metadata = {
   title: "Teen Patti Gold Blog",
   description:
-    "Guides for Teen Patti Gold in Pakistan — weekly bonus wagering, password recovery, IP exceeds limit, and OTP SMS fixes. Updated August 2026.",
+    "Guides for Teen Patti Gold in Pakistan — weekly bonus wagering, password recovery, IP exceeds limit, and OTP SMS fixes. Updated October 2026.",
   keywords: [
     "Teen Patti Gold blog",
     "Teen Patti Gold guide",

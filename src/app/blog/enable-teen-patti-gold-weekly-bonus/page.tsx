@@ -87,8 +87,8 @@ export const metadata: Metadata = {
     siteName: SITE.name,
     locale: "en_US",
     type: "article",
-    publishedTime: "2026-07-29",
-    modifiedTime: "2026-07-29",
+    publishedTime: "2026-10-09",
+    modifiedTime: "2026-10-09",
     images: [
       {
         url: `${SITE.origin}${SITE.images.bonus}`,
@@ -114,8 +114,8 @@ export default function WeeklyBonusGuidePage() {
         title={title}
         description={description}
         slug={slug}
-        datePublished="2026-07-29"
-        dateModified="2026-07-29"
+        datePublished="2026-10-09"
+        dateModified="2026-10-09"
         articleBody={articleBody}
         image={`${SITE.origin}${SITE.images.bonus}`}
       />
@@ -152,7 +152,7 @@ export default function WeeklyBonusGuidePage() {
           <span className="text-accent">How to Enable</span>
           <span className="text-white"> Teen Patti Gold Weekly Bonus &amp; Clear Wager Fast</span>
         </h1>
-        <p className="text-lg text-gray-300 leading-relaxed mb-4">Published July 29, 2026 · 8 min read</p>
+        <p className="text-lg text-gray-300 leading-relaxed mb-4">Published October 9, 2026 · 8 min read</p>
         <p className="text-gray-400 max-w-2xl mx-auto">
           One-time 1000 PKR deposit unlock · forever weekly claims · Fortune Gems, Dragon vs Tiger, and other fast
           games for wagering.

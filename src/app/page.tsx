@@ -507,6 +507,12 @@ export default function Home() {
               </tr>
               <tr>
                 <th scope="row" className="px-4 py-3 font-medium text-gray-400">
+                  Last Update
+                </th>
+                <td className="px-4 py-3">{SITE.updateDate}</td>
+              </tr>
+              <tr>
+                <th scope="row" className="px-4 py-3 font-medium text-gray-400">
                   Size
                 </th>
                 <td className="px-4 py-3">{SITE.fileSize}</td>

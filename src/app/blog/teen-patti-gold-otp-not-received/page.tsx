@@ -62,8 +62,8 @@ export const metadata: Metadata = {
     siteName: SITE.name,
     locale: "en_US",
     type: "article",
-    publishedTime: "2026-07-29",
-    modifiedTime: "2026-07-29",
+    publishedTime: "2026-10-09",
+    modifiedTime: "2026-10-09",
     images: [
       {
         url: `${SITE.origin}${SITE.images.userAccount}`,
@@ -89,8 +89,8 @@ export default function OtpNotReceivedPage() {
         title={title}
         description={description}
         slug={slug}
-        datePublished="2026-07-29"
-        dateModified="2026-07-29"
+        datePublished="2026-10-09"
+        dateModified="2026-10-09"
         articleBody={articleBody}
         image={`${SITE.origin}${SITE.images.userAccount}`}
       />
@@ -124,7 +124,7 @@ export default function OtpNotReceivedPage() {
           <span className="text-white"> Fix Login SMS Delay</span>
         </h1>
         <p className="text-lg text-gray-300 leading-relaxed mb-4">
-          Published July 29, 2026 · 6 min read
+          Published October 9, 2026 · 6 min read
         </p>
         <p className="text-gray-400 max-w-2xl mx-auto">
           Waiting on a verification code that never lands? These fixes cover Pakistani mobile

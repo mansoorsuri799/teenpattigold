@@ -66,7 +66,7 @@ export default function DownloadPage() {
     downloadUrl: SITE.downloadUrl,
     softwareVersion: SITE.version,
     fileSize: SITE.fileSize,
-    datePublished: "2026-07-29",
+    datePublished: "2026-10-09",
     description: `Download Teen Patti Gold APK for Android. Play card games with JazzCash and EasyPaisa wallet support in Pakistan.`,
     image: `${SITE.origin}${SITE.images.logo}`,
     author: {
