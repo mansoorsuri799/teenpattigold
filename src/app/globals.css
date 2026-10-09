@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../../tailwind.config.js";
 
 :root {
   --foreground-rgb: 255, 255, 255;
@@ -42,11 +41,15 @@ footer {
 .download-btn {
   position: relative;
   overflow: hidden;
-  transition: all 0.3s ease;
+  background: #f0b020;
+  color: #0c0906;
+  transition: background-color 0.3s ease, transform 0.3s ease, filter 0.3s ease;
 }
 
 .download-btn:hover {
+  background: #d99a12;
   transform: translateY(-2px);
+  filter: brightness(1.05);
 }
 
 .download-btn:hover .download-icon {

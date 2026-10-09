@@ -3,7 +3,7 @@ import { SITE } from "@/lib/site";
 
 /** Shared medium DOWNLOAD NOW CTA — same size site-wide */
 const MEDIUM_BTN =
-  "relative inline-flex items-center px-6 py-2.5 text-white font-semibold text-sm sm:text-base rounded-full border-2 border-[#0ea5e9] hover:bg-[#0ea5e9]/10 transition-all group";
+  "download-btn relative inline-flex items-center px-6 py-2.5 text-primary font-semibold text-sm sm:text-base rounded-full border-2 border-accent bg-accent transition-colors duration-300 group";
 
 type DownloadButtonProps = {
   className?: string;
@@ -15,21 +15,15 @@ type DownloadButtonProps = {
 
 function DownloadIcon() {
   return (
-    <span className="ml-2 bg-[#f97316] rounded-full p-1.5 group-hover:scale-110 transition-transform inline-flex">
+    <span className="ml-2 inline-flex group-hover:scale-110 transition-transform text-[#140E07]">
       <svg
-        className="w-4 h-4"
-        fill="none"
-        stroke="currentColor"
+        className="w-7 h-7"
+        fill="currentColor"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
       >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-        />
+        <path d="M17.523 15.341a1.023 1.023 0 1 1-2.046 0 1.023 1.023 0 0 1 2.046 0m-8.999 0a1.023 1.023 0 1 1-2.046 0 1.023 1.023 0 0 1 2.046 0m9.237-6.04l1.729-2.994a.407.407 0 0 0-.148-.555.41.41 0 0 0-.557.148l-1.75 3.032A10.9 10.9 0 0 0 12 8.308c-1.69 0-3.282.385-4.685 1.074L5.564 6.35a.41.41 0 0 0-.557-.148.407.407 0 0 0-.148.555l1.729 2.994C3.98 11.046 2.546 13.422 2.25 16.146h19.5c-.297-2.724-1.73-5.1-4.239-6.845" />
       </svg>
     </span>
   );

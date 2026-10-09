@@ -18,20 +18,21 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4.3.3",
     "@types/node": "^20.19.2",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19",
     "@typescript-eslint/eslint-plugin": "^8.35.0",
     "@typescript-eslint/parser": "^8.35.0",
-    "autoprefixer": "^10.4.16",
     "eslint": "^9",
-    "eslint-config-next": "15.3.4",
+    "eslint-config-next": "^16.3.1",
     "postcss": "^8.5.10",
-    "tailwindcss": "^3.3.0",
+    "tailwindcss": "^4.3.3",
     "typescript": "^5"
   },
   "overrides": {
-    "postcss": "^8.5.10"
+    "postcss": "^8.5.10",
+    "brace-expansion@1": "1.1.21"
   },
   "browserslist": {
     "production": [

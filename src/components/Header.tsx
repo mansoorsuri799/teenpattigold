@@ -26,7 +26,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-primary py-3 px-4 md:px-8 sticky top-0 z-30 border-b border-gray-800">
+    <header className="sticky top-0 z-30 py-3 px-4 md:px-8 bg-[#140E07]/60 backdrop-blur-md border-b border-white/10 supports-[backdrop-filter]:bg-[#140E07]/40">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="flex items-center">
           <div className="relative h-10 w-10 mr-2">
